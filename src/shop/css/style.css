@@ -1,0 +1,59 @@
+/*  COLORS :
+black : #222
+grey : #999
+orange : #f68773
+color banner top : #F2EDE9
+*/
+* {
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    text-align: center;
+}
+.root {
+    float: left;
+}
+.circle {
+    width: 0.25%;
+    height: auto;
+    position: relative;
+    top: -3px;
+    display: inline-block;
+}
+.section-title {
+    display: inline;
+    padding-right: 100px;
+}
+.parameters1 {
+    display: inline;
+    padding-right: 50px;
+}
+.parameters2 {
+    display: inline;
+    padding-right:  50px;
+}
+.down-arrow {
+    width: 1%;
+    height: auto;
+    display: inline-block;
+    padding-right: 10px;
+}
+.up-arrow {
+    width: 1%;
+    height: auto;
+    display: inline-block;
+    padding-right: 20px;
+}
+.menu {
+    width: 1%;
+    height: auto;
+    display: inline-block;
+    padding-right: 5px;
+}
+.show {
+    width: 1.2%;
+    height: auto;
+    position: relative;
+    bottom: -1px;
+    display: inline-block;
+}
