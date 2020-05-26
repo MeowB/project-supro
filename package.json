@@ -1,0 +1,23 @@
+{
+  "name": "project-supro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch src/scss -o src/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MeowB/project-supro.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MeowB/project-supro/issues"
+  },
+  "homepage": "https://github.com/MeowB/project-supro#readme",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  }
+}

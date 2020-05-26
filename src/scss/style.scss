@@ -1,0 +1,44 @@
+html{
+
+    
+    main{
+
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+       
+
+        article{
+
+            .bag{
+
+                .grid-container{
+                    display: grid;
+                    align-content: space-evenly;
+                    grid-template-columns: auto auto;
+                    grid-gap: 5%;
+                    background-color: #2196F3;
+                    padding: 3%;
+                    margin-left: 5%;
+
+                    .image{
+
+                        .imageG{
+
+                            img{
+
+                            max-width: 100%;
+                            }
+                        }
+
+                    }
+
+                }
+
+
+            }
+
+        }
+    }
+
+}
