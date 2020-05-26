@@ -1,0 +1,59 @@
+$text-color: #222;
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+
+    border: 2px solid #ccc;
+    height: 80px;
+
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        ul{
+            display: flex;
+            list-style-type: none;
+        }
+
+        li{
+            display: flex;
+        }
+
+        li:first-child{
+            margin-left: 25%;
+        }
+        
+        li:last-child{
+            margin-right: 35%;
+        }
+
+        a {
+            color: $text-color;
+        }
+
+        a:hover {
+            transform: scale(1.04);
+        }
+    }
+
+    form{
+        margin-right: 1%;
+        float: left;
+    }
+
+    ul{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+
+
