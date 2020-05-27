@@ -1,77 +1,89 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  padding: 0;
   text-decoration: none;
   list-style: none;
-  box-sizing: border-box;
-}
-
-.container {
-  width: 100%;
-  margin: auto;
-  overflow: hidden;
   font-family: "Roboto", sans-serif;
 }
 
-header .topnav {
+header {
+  display: flex;
+  flex-flow: row wrap;
   background-color: #F2EDE9;
-  width: 100%;
-}
-header .topnav .logo {
-  padding: 40px;
-  line-height: 90px;
-  margin-top: 20px;
-}
-header .topnav nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  padding: 0 1rem;
   height: 90px;
+  width: 100%;
+  align-items: center;
+  border: 1px solid #ccc;
 }
-header .topnav nav ul {
-  font-size: 16px;
+header .logo {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 80px;
+  margin-left: 30px;
+  height: 90px;
+  transform: scale(0.8);
+  outline: none;
+  flex-flow: row wrap;
+}
+header nav {
+  display: none;
+}
+header nav ul {
+  font-size: 12px;
+  font-weight: bold;
   display: flex;
-  width: auto;
-  justify-content: space-between;
+  margin-bottom: 110px;
+  margin-left: 1rem;
+  padding-left: 80px;
 }
-header .topnav nav ul li {
+header nav ul li {
   display: flex;
   padding: 13px;
 }
-header .topnav nav ul a {
+header nav ul a {
   color: #222;
   text-decoration: none;
 }
-header .topnav nav ul a:hover {
+header nav ul a:hover {
   transform: scale(1.04);
 }
-header .topnav .icons-socials {
-  float: right;
-  margin: 2%;
-  transform: scale(0.7);
+@media screen and (min-width: 968px) {
+  header nav {
+    display: flex;
+    flex: 2;
+  }
 }
-header .topnav .icons-socials a {
-  margin: 8px;
-}
-header input {
+header #search input {
+  margin-bottom: 100px;
   border-radius: 15px;
+  outline: none;
   width: 200px;
   border: none;
   height: 30px;
   text-indent: 15px;
-  background-color: #fff;
 }
-header input::placeholder {
+header #search input::placeholder {
   opacity: 0.4;
+  background: #fff url(../homepage/thumbnail/search-outline.svg) no-repeat 9px center;
+  background-position: right;
+}
+header aside {
+  margin-left: auto;
+}
+header .header-icons .icons {
+  justify-content: flex-end;
+  margin-bottom: 100px;
+}
+header .header-icons .icons li {
+  display: inline-block;
+  height: 24px;
+  width: 24px;
+  margin-left: 0.8rem;
 }
 
 @media screen and (min-width: 768px) {
   #menu-btn {
-    display: none;
-  }
-
-  .topnav nav ul {
     display: none;
   }
 }
