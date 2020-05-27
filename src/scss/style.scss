@@ -1,10 +1,12 @@
-$cercle: 20px;
-$color1: red;
-$color2: orange; 
+
+$cercle: 25px;
+$color1:blue;
+$color2: brown; 
 $color3: green;
 $color_size:lightgrey;
 $borderCercle:20px;
 $borderColor:grey;
+
 
 
 html{
@@ -26,9 +28,7 @@ html{
                     align-content: space-evenly;
                     grid-template-columns: auto auto;
                     grid-gap: 5%;
-                    background-color: #2196F3;
-                    padding: 3%;
-                    margin-left: 5%;
+                    background-color: yellow;
 
                     .image{
 
@@ -68,6 +68,8 @@ html{
                                     background-color: $color1;
                                     list-style: none; 
                                     display: inline-block;
+                                    border: grey 3px Solid ;
+                                    border:white 5px Solid;
                                     
 
 
@@ -81,6 +83,9 @@ html{
                                         background-color: $color2;
                                         list-style: none; 
                                         display: inline-block;
+                                        border: grey 3px Solid ;
+                                        border:white 5px Solid;
+                                        outline:radius 1px solid red;
 
                                             }
 
@@ -91,6 +96,8 @@ html{
                                         background-color: $color3;
                                         list-style: none; 
                                         display: inline-block;
+                                        border: grey 3px Solid ;
+                                        border:white 5px Solid;
                                         }
                                 
                             
@@ -109,6 +116,7 @@ html{
                                 text-transform: capitalize;
                                 list-style: none; 
                                 display: inline-block;
+                                vertical-align: middle;
 
                             }
 
@@ -122,6 +130,7 @@ html{
                                 text-transform: capitalize;
                                 list-style: none; 
                                 display: inline-block;
+                                vertical-align: middle;
 
                             }
 
@@ -134,6 +143,7 @@ html{
                                 text-transform: capitalize;
                                 list-style: none; 
                                 display: inline-block;
+                                vertical-align: middle;
                                 
                             }
                         }
@@ -158,7 +168,114 @@ html{
 
             }
 
+            section{
+
+                .description{
+                    background-color: #657845;
+                    
+                    
+                    
+                        ul{
+                            li{
+                                list-style: none;
+                                text-transform: capitalize;
+                                display: inline-block;
+                            }
+                        }
+                }
+
+            }
+
+
+            section{
+                .grid-container-2{
+                    background-color: olive;
+                    display: grid;
+                    align-content: space-evenly;
+                    grid-template-columns: auto auto;
+                    grid-gap: 5%;
+
+                        .presentation{
+
+                            h2{text-transform:capitalize;}
+                            .text{
+                                p{
+
+                                }
+                            }
+                            .features{
+                                h2{}
+                                ul{
+                                    li{}
+                                }
+
+                            }
+                        }
+            
+
+                        .image{}
+                    }
+
+
+                 }
+
+                 section{
+
+
+                    .grid-container-3{
+
+                        background-color: orangered;
+                        display: grid;
+                        align-content: space-evenly;
+                        grid-template-columns: auto auto auto auto;
+                        
+
+                        figure{
+                            img{
+                                width: 125px;
+                            }
+                            figcaptation{
+                                p{
+
+                                }
+
+                            }
+                        }
+                    }
+                 }
+
+                 section{
+
+
+                    .grid-container-4{
+
+                        background-color:blueviolet;
+                        display: grid;
+                        align-content: space-evenly;
+                        grid-template-columns: auto auto auto auto;
+                        
+
+                        figure{
+                            img{
+                                width: 125px;
+                            }
+                            figcaptation{
+                                p{
+
+                                }
+
+                            }
+                        }
+                    }
+                 }
+
+
+
+
+
+
         }
     }
 
 }
+

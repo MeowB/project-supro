@@ -7,9 +7,7 @@ html main {
     align-content: space-evenly;
     grid-template-columns: auto auto;
     grid-gap: 5%;
-    background-color: #2196F3;
-    padding: 3%;
-    margin-left: 5%; }
+    background-color: yellow; }
     html main article section .grid-container .image {
       display: inline;
       list-style: none;
@@ -21,54 +19,92 @@ html main {
         max-width: 20%;
         margin-left: 2%; }
     html main article section .grid-container .review .color .color1 {
-      height: 20px;
-      width: 20px;
+      height: 25px;
+      width: 25px;
       border-radius: 20px;
-      background-color: red;
+      background-color: blue;
       list-style: none;
-      display: inline-block; }
+      display: inline-block;
+      border: grey 3px Solid;
+      border: white 5px Solid; }
     html main article section .grid-container .review .color .color2 {
-      height: 20px;
-      width: 20px;
+      height: 25px;
+      width: 25px;
       border-radius: 20px;
-      background-color: orange;
+      background-color: brown;
       list-style: none;
-      display: inline-block; }
+      display: inline-block;
+      border: grey 3px Solid;
+      border: white 5px Solid;
+      outline: radius 1px solid red; }
     html main article section .grid-container .review .color .color3 {
-      height: 20px;
-      width: 20px;
+      height: 25px;
+      width: 25px;
       border-radius: 20px;
       background-color: green;
       list-style: none;
-      display: inline-block; }
+      display: inline-block;
+      border: grey 3px Solid;
+      border: white 5px Solid; }
     html main article section .grid-container .review .size .small {
-      height: 20px;
-      width: 20px;
+      height: 25px;
+      width: 25px;
       border-radius: 20px;
       background-color: lightgrey;
       text-align: center;
       text-transform: capitalize;
       list-style: none;
-      display: inline-block; }
+      display: inline-block;
+      vertical-align: middle; }
     html main article section .grid-container .review .size .medium {
-      height: 20px;
-      width: 20px;
+      height: 25px;
+      width: 25px;
       border-radius: 20px;
       background-color: lightgrey;
       text-align: center;
       text-transform: capitalize;
       list-style: none;
-      display: inline-block; }
+      display: inline-block;
+      vertical-align: middle; }
     html main article section .grid-container .review .size .large {
-      height: 20px;
-      width: 20px;
+      height: 25px;
+      width: 25px;
       border-radius: 20px;
       background-color: lightgrey;
       text-align: center;
       text-transform: capitalize;
       list-style: none;
-      display: inline-block; }
+      display: inline-block;
+      vertical-align: middle; }
     html main article section .grid-container .review .media-icons ul li {
       display: inline;
       list-style: none;
       margin: 10px; }
+  html main article section .description {
+    background-color: #657845; }
+    html main article section .description ul li {
+      list-style: none;
+      text-transform: capitalize;
+      display: inline-block; }
+  html main article section .grid-container-2 {
+    background-color: olive;
+    display: grid;
+    align-content: space-evenly;
+    grid-template-columns: auto auto;
+    grid-gap: 5%; }
+    html main article section .grid-container-2 .presentation h2 {
+      text-transform: capitalize; }
+  html main article section .grid-container-3 {
+    background-color: orangered;
+    display: grid;
+    align-content: space-evenly;
+    grid-template-columns: auto auto auto auto; }
+    html main article section .grid-container-3 figure img {
+      width: 125px; }
+  html main article section .grid-container-4 {
+    background-color: blueviolet;
+    display: grid;
+    align-content: space-evenly;
+    grid-template-columns: auto auto auto auto; }
+    html main article section .grid-container-4 figure img {
+      width: 125px; }
