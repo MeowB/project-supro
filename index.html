@@ -1,279 +1,45 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>Supro.| dev</title>
-    <link rel="stylesheet" href="src/css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-
-    <meta name="viewport" content="width=device-width, initial scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="src/css/style.css">
+  <title>Document</title>
 </head>
 
 <body>
-    <header>
-        
-        <div class="logo"><a href="#" ><img src="src/homepage/resources/logo_supro_1.png" alt="supro logo"></a></div>
-        
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Shop</a></li>
-                <li><a href="#">Product</a></li>
-                <li><a href="#">Pages</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-        
-        <form id="search">
-            <input type="search" placeholder="Start Searching...">
-        </form>
+  <div id="app">
+    <header class="header">
+      <a href="#" class="header__logo"><img src="src/img/logo.png" alt=""></a>
+      <nav class="header__nav">
+        <ul class="header__list">
+          <li class="header__item"><a href="#">Home</a></li>
+          <li class="header__item"><a href="#">Shop</a></li>
+          <li class="header__item"><a href="#">Product</a></li>
+          <li class="header__item"><a href="#">Pages</a></li>
+          <li class="header__item"><a href="#">Blog</a></li>
+          <li class="header__item"><a href="#">Contact</a></li>
+        </ul>
+      </nav>
 
-        <aside class="header-icons">
-            <ul class="icons">
-                <li><a href="#"><img src="src\homepage\thumbnail\person-outline.svg" alt=""></a></li>
-                <li><a href="#"><img src="src\homepage\thumbnail\heart-outline.svg" alt=""></a></li>
-                <li><a href="#"><img src="src\homepage\thumbnail\cart-outline.svg" alt=""></a></li>
-                <li><a href="#"><img src="src\homepage\thumbnail\gear-outline.svg" alt=""></a></li>
-                <li><a href="#" id="menu-btn"><img src="src\homepage\thumbnail\open-menu.svg" alt=""></a></li>
-            </ul>
-        </aside>
+      <input type="text" class="header__search" placeholder="Search here...">
+      
+
+
+      <aside class="header__media">
+        <ul class="header__icons">
+          <li class="header__icon header__icon--search"><i class="fa fa-search fa-lg" aria-hidden="true"></i></li>
+          <li class="header__icon"><i class="fa fa-user fa-lg" aria-hidden="true"></i></li>
+          <li class="header__icon"><i class="fa fa-heart fa-lg" aria-hidden="true"></i></li>
+          <li class="header__icon"><i class="fa fa-shopping-cart fa-lg" aria-hidden="true"></i></li>
+          <li class="header__icon header__icon--menu"><i class="fa fa-bars fa-lg" aria-hidden="true"></i></li>
+        </ul>
+      </aside>
     </header>
+  </div>
 
-    <main>
-        <div class="showcase">
-            <section>
-                <div class="container">
-                    <ul>
-                        <li><a href="#"></a><img src="" alt="Facebook"></li>
-                        <li><a href="#"></a><img src="" alt="twitter"></li>
-                        <li><a href="#"></a><img src="" alt="google+"></li>
-                        <li><a href="#"></a><img src="" alt="pinterest"></li>
-                    </ul>
-                    <p class="orange">NEXT SS PREVIEW</p>
-                    <h1>Woman Shoes</h1>
-                    <a href="#" class="major-link">discover more</a>
-                </div>
-            </section>
-
-            <section id="banner">
-                <div class="box">
-                    <h2>Hairband<br>Collection</h2>
-                    <a href="#" class="major-link">discover more</a>
-                </div>
-                <div class="box">
-                    <p>Mini Studded</p>
-                    <h2>Split Suede<br>Bucet Bag</h2>
-                    <a href="#" class="major-link">discover more</a>
-                </div>
-                <div class="box">
-                    <p>Special Price</p>
-                    <h2>Curduroy<br>Culottes</h2>
-                    <a href="#" class="major-link">discover more</a>
-                </div>
-            </section>
-
-            <section id="gallery">
-                <div class="container">
-                    <h2>Top Sellers</h2>
-                    <div class="high-sales-left">
-                        <img src="http://placekitten.com/200/300" alt="bag">
-                        <h3>Leather Shop Bag</h3>
-                        <span class="price">$89.90</span>
-                        <a href="#" class="major-link">SHOP NOW</a>
-                    </div>
-                    <div class="high-sales-right">
-                        <img src="http://placekitten.com/200/300" alt="girl red shirt">
-                        <h2>Flower Designs Blouse</h2>
-                        <span class="price">$59.90</span>
-                        <a href="#" class="major-link">SHOP NOW</a>
-                    </div>
-                    <div class="high-sales-left">
-                        <img src="http://placekitten.com/200/300" alt="shoes">
-                        <h2>Glitter Decorate Shoes</h2>
-                        <span class="price">$89.90</span>
-                        <a href="#" class="major-link">SHOP NOW</a>
-                    </div>
-                    <div class="high-sales-right">
-                        <img src="http://placekitten.com/200/300" alt="glasses">
-                        <h3>Metallic Frames Glasses</h3>
-                        <span class="price">$59.90</span>
-                        <a href="#" class="major-link">SHOP NOW</a>
-                    </div>
-                </div>
-            </section>
-
-            <section id="arrival">
-                <div class="Boxes">
-                    <h3>New Arrival</h3>
-                    <p>Browse the huge variety of our products</p>
-                    <ul>
-                        <li><a href="#">Clothing</a></li>
-                        <li><a href="#">Shoes</a></li>
-                        <li><a href="#">Bags</a></li>
-                        <li><a href="#">Wallets</a></li>
-                        <li><a href="#">Belts</a></li>
-                    </ul>
-
-                    <div class="box">
-                        <a href="#"><img src="http://placekitten.com/200/300" alt="grey shirt girl"></a>
-                        <p>Tuk Peacock Shoes</p>
-                        <!-- starring here -->
-                        <span>$88.00</span>
-                    </div>
-                    <div class="box">
-                        <a href="#"><img src="http://placekitten.com/200/300" alt="blue shirt girl"></a>
-                        <p>Contour Skinny</p>
-                        <!-- starring here -->
-                        <span>$79.00</span>
-                        <p>$75.00</p>
-                    </div>
-                    <div class="box">
-                        <a href="#"><img src="http://placekitten.com/200/300" alt="leather jacket girl"></a>
-                        <p>Tess cropped stretch-cloque top</p>
-                        <span>$39.00</span>
-                        <!-- round color choices here -->
-                    </div>
-                    <div class="box">
-                        <a href="#"><img src="http://placekitten.com/200/300" alt="brown bag"></a>
-                        <p>Wholesale Fashion Handbags</p>
-                    </div>
-                    <div class="box">
-                        <a href="#"><img src="http://placekitten.com/200/300" alt="blue bag"></a>
-                        <p>Beebay Full Length Denim</p>
-                        <span>$41.00</span>
-                        <!-- round size choices here -->
-                    </div>
-                    <div class="box">
-                        <a href="#"><img src="http://placekitten.com/200/300" alt="dark shoes"></a>
-                        <p>Cyan Boheme</p>
-                        <span>$87.00</span>
-                    </div>
-
-                    <a href="#" class="major-link">discover more</a>
-                </div>
-            </section>
-
-            <section id="deal">
-                <div class="container">
-                    <p>Deal of the day</p>
-                    <h3>Hobo Shopper Bag</h3>
-                    <span>$79.90</span>
-                    <p>$39.90</p>
-                    <p class="discount">Save 50%</p>
-                    <p class="stock">In stock</p>
-
-                    <div class="countdown">
-                        <!-- INSERT BIG FAT COUNT DOWN HERE -->
-                    </div>
-
-                    <a href="#" class="major-link">SHOP NOW</a>
-                </div>
-            </section>
-
-
-            <section id="news">
-                <div class="container">
-                    <h2>Latest News</h2>
-                    <p>Our recent articles about ideas & products</p>
-                    <a href="#" class="major-link">SEE MORE NEWS</a>
-                    <article>
-                        <img src="" alt="girl looking through mirror">
-                        <p><b>The Best Red Carpet Looks From NNACP Image Awards</b></p>
-                        <P><span class="orange">Christine</span> Jan 30, 2019</P>
-                    </article>
-                    <article>
-                        <img src="" alt="lamp">
-                        <p><b>How Bella Hadid dresses down a ladylike coat</b></p>
-                        <P><span class="orange">John Peter</span> Jan 30, 2019</P>
-                    </article>
-                    <article>
-                        <img src="" alt="leaf">
-                        <p><b>The best street style from Berlin Fashion Week Fall</b></p>
-                        <P><span class="orange">anna</span> Jan 30, 2019</P>
-                    </article>
-                </div>
-            </section>
-
-            <section id="newsletter">
-                <div class="container">
-                    <h1>Subscribe To Our Newsletter</h1>
-                    <form>
-                        <input type="email" placeholder="Enter Email...">
-                        <button type="submit" class="button_1">Subscribe</button>
-                    </form>
-                </div>
-            </section>
-
-            <section id="ending">
-                <img src="" alt="banner of multiple pics 100% width">
-            </section>
-
-            <footer>
-                <div id="logo"><img src="src/homepage/resources/logo_supro_1.png" alt="supro logo"></div>
-                <div class="contact">
-                    <img src="" alt="place marker icon">
-                    <p>184 Main Rd R, St Albans<br>VIC 3021, Australia</p>
-
-                    <img src="" alt="mail icon">
-                    <p>contact@company.com</p>
-
-                    <img src="" alt="phone icon">
-                    <p>+001 2233 456</p>
-                </div>
-                <div class="info">
-                    <h4>HELP & INFORMATION</h4>
-                    <ul>
-                        <li>Track Order</li>
-                        <li>Premier Delivery</li>
-                        <li>Student Discount</li>
-                    </ul>
-                </div>
-                <div class="about">
-                    <h4>ABOUT SUPRO</h4>
-                    <ul>
-                        <li>About Us</li>
-                        <li>Careers</li>
-                        <li>Corporate</li>
-                        <li>Investors</li>
-                    </ul>
-                </div>
-                <div class="shop">
-                    <h4>ONLINE SHOP</h4>
-                    <ul>
-                        <li>Shoes</li>
-                        <li>Bags</li>
-                        <li>Wallets</li>
-                        <li>Belts</li>
-                    </ul>
-                </div>
-                <div id="misc">
-                    <p>©2018. All rights reserved</p>
-
-                    <ul class="socials">
-                        <li><a href="#"><img src="" alt="Facebook"></li></a>
-                        <li><a href="#"><img src="" alt="twitter"></li></a>
-                        <li><a href="#"><img src="" alt="google+"></li></a>
-                        <li><a href="#"><img src="" alt="pinterest"></li></a>
-                        <li><a href="#"><img src="" alt="instagram"></li></a>
-                    </ul>
-
-
-                    <ul class="payments">
-                        <li><img src="" alt="visa icon"></li>
-                        <li><img src="" alt="paypal icon"></li>
-                        <li><img src="" alt="mastercard icon"></li>
-                        <li><img src="" alt="discover icon"></li>
-                        <li><img src="" alt="amex icon"></li>
-                    </ul>
-
-                </div>
-            </footer>
-        </div>
-    </main>
-
-
-
+</body>
+<script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
 
 </html>

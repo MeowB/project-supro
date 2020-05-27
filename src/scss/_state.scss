@@ -1,0 +1,23 @@
+
+.header{
+    
+    @media screen and (max-width: 968px){
+        background: #fff;
+    }
+    
+
+    &__item:hover{
+        transform: scale(1.04);
+    }
+
+    &__icon {
+        &--search, &--menu {
+          display: block;
+          @media screen and (min-width: 968px) {
+            display: none;
+          }
+         }
+        }
+
+
+}
