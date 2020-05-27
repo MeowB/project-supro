@@ -9,31 +9,36 @@
 </head>
 
 <body>
+    <header>
+        <!--Scott is working on this-->
+    </header>
     <main>
         <nav>
             <div class="root">
-                Home 
+                <span class="grey-text">Home</span> 
                 <img src="shop/resources/circle.png" alt="circle" class="circle">
-                Fashion 
+                <span class="grey-text">Fashion</span> 
                 <img src="shop/resources/circle.png" alt="circle" class="circle">
-                Shoes
+                <span class="black-text">Shoes</span>
             </div>
             <br>
-            <div class="section-title">
-                <h1>Shoes</h1>
-            </div>
-            <div class="parameters1">
+            <span class="title">
+            <span class="section-title">
+                <h1 class="black-text">Shoes</h1>
+            </span>
+            <span class="parameters">
+            <span class="parameters1" class="black-text">
                 Items 1-12 of 36
-            </div>
-            <div class="parameters1">
-                Sort By Position
-            </div>
+            </span>
+            <span class="parameters1" class="black-text">
+                Sort By <span class="grey-text">Position</span>
+            </span>
             <img src="shop/resources/down-arrow.png" alt="down-arrow" class="down-arrow">
             <img src="shop/resources/up-arrow.png" alt="up-arrow" class="up-arrow">
             <img src="shop/resources/menu.png" alt="menu" class="menu">
             <img src="shop/resources/show.png" alt="show" class="show">
         </nav>
-        <section>
+        <section class="grid">
             <div class="parent">
                 <div class="div1">
                     <img src="shop/resources/prd_03_1.jpg" alt="item" class="item">
@@ -60,7 +65,8 @@
                 <div class="div4">
                     <img src="shop/resources/prd_17_1.jpg" alt="item" class="item">
                     <div class="bold">Brown Jacket</div>
-                    <div class="line" class="prix">$89.00</div><div class="nouveau-prix">$80.00</div> 
+                    <div class="line" class="prix">$89.00</div>
+                    <div class="nouveau-prix">$80.00</div> 
                 </div>
                 <div class="div5">
                     <img src="shop/resources/prd_12_1_4.jpg" alt="item" class="item">
@@ -127,16 +133,30 @@
         <aside>
             <h2>Shop By</h2>
             <h3>COLOR</h3>
-            <img src="shop/resources/black.png" alt="black" class="color-choice">
+            <img src="shop/resources/black.png" alt="black" class="color">
             Black
-            <img src="shop/resources/blue.png" alt="blue" class="color-choice">
+            <img src="shop/resources/blue.png" alt="blue" class="color">
             Blue
-            <img src="shop/resources/brown.png" alt="brown" class="color-choice">
+            <img src="shop/resources/brown.png" alt="brown" class="color">
             Brown
             <h3>SIZE</h3>
             <img src="shop/resources/xs.png" alt="XS" class="size-selector">
             <img src="shop/resources/s.png" alt="S" class="size-selector">
             <img src="shop/resources/m.png" alt="M" class="size-selector">
+            <h3>PRICE</h3>
+            <div>$29 - $95.99</div>
+            <progress id="prix" max="100" value="100"> 100% </progress>
+            <h3>BRAND</h3>
+            <div>Creative
+            <input type="checkbox" checked="checked">
+            <span class="checkmark"></span>
+            </div>
+            <div>Wellness
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            </div>
+            <h2>Compare products</h2>
+            <span class="grey-text">You have no items to compare.</span>
         </aside>
     </main>
 </body>

@@ -14,25 +14,28 @@ h1 {
     display: inline;
 }
 .root {
-    float: left;
+    width: 57%;
 }
 .circle {
-    width: 0.25%;
+    width: 0.5%;
     height: auto;
     position: relative;
     top: -3px;
-    display: inline-block;
 }
 .section-title {
-    display: inline;
-    padding-right: 100px;
+    display: inline-block;
+    width:  53%;
+    float: left;
+}
+.parameters {
+    display: inline-block;
+    width:  90%;
+    float: right;
 }
 .parameters1 {
-    display: inline;
     padding-right: 50px;
 }
 .parameters2 {
-    display: inline;
     padding-right:  50px;
 }
 .down-arrow {
@@ -64,45 +67,59 @@ h1 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
-    align-items: center;
-    }
+    grid-column-gap: 20px;
+    grid-row-gap: 50px;
+    width: 40%;
+    padding-left: 25%;
     
-.div1 { grid-area: 1 / 1 / 2 / 2; }
-.div2 { grid-area: 1 / 2 / 2 / 3; }
-.div3 { grid-area: 1 / 3 / 2 / 4; }
-.div4 { grid-area: 2 / 1 / 3 / 2; }
-.div5 { grid-area: 2 / 2 / 3 / 3; }
-.div6 { grid-area: 2 / 3 / 3 / 4; }
-.div7 { grid-area: 3 / 1 / 4 / 2; }
-.div8 { grid-area: 3 / 2 / 4 / 3; }
-.div9 { grid-area: 3 / 3 / 4 / 4; }
-.div10 { grid-area: 4 / 1 / 5 / 2; }
-.div11 { grid-area: 4 / 2 / 5 / 3; }
-.div12 { grid-area: 4 / 3 / 5 / 4; }
+}
+    
+.div1 { grid-area: 1 / 1 / 2 / 2;
+}
+.div2 { grid-area: 1 / 2 / 2 / 3; 
+}
+.div3 { grid-area: 1 / 3 / 2 / 4;  
+}
+.div4 { grid-area: 2 / 1 / 3 / 2; 
+}
+.div5 { grid-area: 2 / 2 / 3 / 3; 
+}
+.div6 { grid-area: 2 / 3 / 3 / 4; 
+}
+.div7 { grid-area: 3 / 1 / 4 / 2; 
+}
+.div8 { grid-area: 3 / 2 / 4 / 3; 
+}
+.div9 { grid-area: 3 / 3 / 4 / 4; 
+}
+.div10 { grid-area: 4 / 1 / 5 / 2; 
+}
+.div11 { grid-area: 4 / 2 / 5 / 3; 
+}
+.div12 { grid-area: 4 / 3 / 5 / 4; 
+}
 
 .star {
-    width: 2%;
+    width: 5%;
     height: auto;
     display: inline-block;
     padding: 0px;
 }
 .color-choice {
-    width: 2%;
+    width: 5%;
     height: auto;
-    display: inline-block;
     padding-right: 2px;
     border-radius: 50%;
 }
-.bolder {
+.bold {
     font-weight: bolder;
 }
 .line {
     text-decoration: line-through;
+    color: gray;
 }
 .size-choice {
-    width: 2%;
+    width: 10%;
     height: auto;
     display: inline-block;
     padding-right: 2px;
@@ -119,13 +136,28 @@ h1 {
     display: inline-block;
 }
 .size-selector {
-    display: inline;
     width: 5%;
     height: auto;
     border: 1px solid grey;
     padding-left: 5px;
     padding-right: 5px;
 }
-aside {
-    display: inline-block;
+.grey-text {
+    color: gray;
+}
+.black-text {
+    color: black;
+    font-weight: bold;
+}
+.prix {
+    color: grey;
+}
+.nouveau-prix {
+    color: black;
+}
+.color {
+    width: 1%;
+    height: auto;
+    padding-right: 2px;
+    border-radius: 50%;
 }
