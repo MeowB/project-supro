@@ -94,6 +94,8 @@ html main {
     grid-gap: 5%; }
     html main article section .grid-container-2 .presentation h2 {
       text-transform: capitalize; }
+    html main article section .grid-container-2 .image {
+      margin: auto; }
   html main article section .grid-container-3 {
     background-color: orangered;
     display: grid;
