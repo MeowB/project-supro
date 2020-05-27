@@ -1,3 +1,12 @@
+$cercle: 20px;
+$color1: red;
+$color2: orange; 
+$color3: green;
+$color_size:lightgrey;
+$borderCercle:20px;
+$borderColor:grey;
+
+
 html{
 
     
@@ -10,7 +19,7 @@ html{
 
         article{
 
-            .bag{
+            section{
 
                 .grid-container{
                     display: grid;
@@ -26,11 +35,122 @@ html{
                         .imageG{
 
                             img{
-
                             max-width: 100%;
+                            margin-bottom: 4%;
+                            
+                          
+                            }
+                        }
+                        display: inline;
+                        list-style: none; 
+                        margin: 10px;
+
+                        .imageS{
+
+                            img{
+
+                                max-width: 20%;
+                                margin-left: 2%;
                             }
                         }
 
+                    }
+
+                    .review{
+                        .color{
+                                
+                                    
+                            .color1{
+                                                
+                                height: $cercle;
+                                    width: $cercle;
+                                    border-radius: $borderCercle;
+                                    background-color: $color1;
+                                    list-style: none; 
+                                    display: inline-block;
+                                    
+
+
+                                            }
+
+
+                            .color2{
+                                        height: $cercle;
+                                        width: $cercle;
+                                        border-radius: $borderCercle;
+                                        background-color: $color2;
+                                        list-style: none; 
+                                        display: inline-block;
+
+                                            }
+
+                            .color3{
+                                        height: $cercle;
+                                        width: $cercle;
+                                        border-radius: $borderCercle;
+                                        background-color: $color3;
+                                        list-style: none; 
+                                        display: inline-block;
+                                        }
+                                
+                            
+                        }
+
+
+
+                        .size{
+
+                            .small{
+                                height: $cercle;
+                                width: $cercle;
+                                border-radius: $borderCercle;
+                                background-color: $color_size;
+                                text-align: center;
+                                text-transform: capitalize;
+                                list-style: none; 
+                                display: inline-block;
+
+                            }
+
+
+                            .medium{
+                                height: $cercle;
+                                width: $cercle;
+                                border-radius: $borderCercle;
+                                background-color: $color_size;
+                                text-align: center;
+                                text-transform: capitalize;
+                                list-style: none; 
+                                display: inline-block;
+
+                            }
+
+                            .large{
+                                height: $cercle;
+                                width: $cercle;
+                                border-radius: $borderCercle;
+                                background-color: $color_size;
+                                text-align: center;
+                                text-transform: capitalize;
+                                list-style: none; 
+                                display: inline-block;
+                                
+                            }
+                        }
+
+                        .media-icons{
+
+                                ul{
+
+                                    li{
+                                        display: inline;
+                                        list-style: none; 
+                                        margin: 10px;
+
+                                    }
+                                }
+
+                        }
                     }
 
                 }

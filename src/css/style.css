@@ -2,7 +2,7 @@ html main {
   width: 75%;
   margin-left: auto;
   margin-right: auto; }
-  html main article .bag .grid-container {
+  html main article section .grid-container {
     display: grid;
     align-content: space-evenly;
     grid-template-columns: auto auto;
@@ -10,5 +10,65 @@ html main {
     background-color: #2196F3;
     padding: 3%;
     margin-left: 5%; }
-    html main article .bag .grid-container .image .imageG img {
-      max-width: 100%; }
+    html main article section .grid-container .image {
+      display: inline;
+      list-style: none;
+      margin: 10px; }
+      html main article section .grid-container .image .imageG img {
+        max-width: 100%;
+        margin-bottom: 4%; }
+      html main article section .grid-container .image .imageS img {
+        max-width: 20%;
+        margin-left: 2%; }
+    html main article section .grid-container .review .color .color1 {
+      height: 20px;
+      width: 20px;
+      border-radius: 20px;
+      background-color: red;
+      list-style: none;
+      display: inline-block; }
+    html main article section .grid-container .review .color .color2 {
+      height: 20px;
+      width: 20px;
+      border-radius: 20px;
+      background-color: orange;
+      list-style: none;
+      display: inline-block; }
+    html main article section .grid-container .review .color .color3 {
+      height: 20px;
+      width: 20px;
+      border-radius: 20px;
+      background-color: green;
+      list-style: none;
+      display: inline-block; }
+    html main article section .grid-container .review .size .small {
+      height: 20px;
+      width: 20px;
+      border-radius: 20px;
+      background-color: lightgrey;
+      text-align: center;
+      text-transform: capitalize;
+      list-style: none;
+      display: inline-block; }
+    html main article section .grid-container .review .size .medium {
+      height: 20px;
+      width: 20px;
+      border-radius: 20px;
+      background-color: lightgrey;
+      text-align: center;
+      text-transform: capitalize;
+      list-style: none;
+      display: inline-block; }
+    html main article section .grid-container .review .size .large {
+      height: 20px;
+      width: 20px;
+      border-radius: 20px;
+      background-color: lightgrey;
+      text-align: center;
+      text-transform: capitalize;
+      list-style: none;
+      display: inline-block; }
+    html main article section .grid-container .review .media-icons ul li {
+      display: inline;
+      list-style: none;
+      margin: 10px; }
