@@ -7,77 +7,75 @@ color banner top : #F2EDE9
 * {
     font-family: 'Roboto', sans-serif;
 }
-nav {
-    text-align: center;
-}
 h1 {
     display: inline;
 }
 .root {
-    width: 1400px;
     padding-top: 50px;
+    padding-left: 20%;
 }
 .circle {
     width: 5px;
     height: auto;
     position: relative;
     top: -3px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 .section-title {
     display: inline-block;
-    position: relative;
-    left: 350px;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-left: 20%;
+    padding-top: 30px;
 }
 .parameters {
     display: inline-block;
+    padding-left: 800px;
     position: relative;
-    width:  1500px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    padding-left: 250px;
+    top: -36px;
 }
 .parameters1 {
     padding-right: 50px;
 }
 .parameters2 {
-    padding-right:  0px;
+    padding-right:  50px;
 }
 .down-arrow {
-    width: 1%;
+    width: 2%;
     height: auto;
     display: inline-block;
     padding-right: 10px;
+    padding-left: 50px;
 }
 .up-arrow {
-    width: 1%;
+    width: 2%;
     height: auto;
     display: inline-block;
     padding-right: 20px;
 }
 .menu {
-    width: 1%;
+    width: 2%;
     height: auto;
     display: inline-block;
     padding-right: 5px;
 }
 .show {
-    width: 1.2%;
+    width: 2.5%;
     height: auto;
     position: relative;
     bottom: -1px;
     display: inline-block;
 }
+
 .parent {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
     grid-column-gap: 20px;
     grid-row-gap: 50px;
-    width: 40%;
-    padding-left: 25%;
+    width: min-content;
+    padding-left: 20%;
     float: left;
+    
 }
     
 .div1 { grid-area: 1 / 1 / 2 / 2;
@@ -175,11 +173,16 @@ h1 {
 .item {
     padding-bottom: 20px;
 }
+.page-number {
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    bottom: -50%;
+    left: -5%;
+    text-align: center;
+    
+}
 aside {
     float: left;
-    padding-left: 20px;
-}
-.page-number {
-    /*Il faut que le numéro de page reste en bas*/
-    float: none;
+    width: min-content;
 }
