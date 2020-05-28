@@ -6,8 +6,7 @@ html main {
     display: grid;
     align-content: space-evenly;
     grid-template-columns: auto auto;
-    grid-gap: 5%;
-    background-color: yellow; }
+    grid-gap: 5%; }
     html main article section .grid-container .image {
       display: inline;
       list-style: none;
@@ -22,7 +21,7 @@ html main {
       height: 25px;
       width: 25px;
       border-radius: 20px;
-      background-color: blue;
+      background-color: #ffee00;
       list-style: none;
       display: inline-block;
       border: grey 3px Solid;
@@ -87,15 +86,17 @@ html main {
       text-transform: capitalize;
       display: inline-block; }
   html main article section .grid-container-2 {
-    background-color: olive;
     display: grid;
     align-content: space-evenly;
     grid-template-columns: auto auto;
-    grid-gap: 5%; }
+    grid-gap: 5%;
+    line-height: 25px; }
     html main article section .grid-container-2 .presentation h2 {
       text-transform: capitalize; }
-    html main article section .grid-container-2 .image {
-      margin: auto; }
+    html main article section .grid-container-2 .presentation .text p {
+      text-align: justify; }
+    html main article section .grid-container-2 .image img {
+      max-width: 100%; }
   html main article section .grid-container-3 {
     background-color: orangered;
     display: grid;

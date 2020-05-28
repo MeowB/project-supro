@@ -19,6 +19,7 @@ html {
                     align-content: space-evenly;
                     grid-template-columns: auto auto;
                     grid-gap: 5%;
+                    background-color: yellow;
 
                     .image {
                         display: inline;
@@ -142,19 +143,17 @@ html {
 
             section {
                 .grid-container-2 {
+                    background-color: rgb(255, 255, 0);
                     display: grid;
                     align-content: space-evenly;
                     grid-template-columns: auto auto;
                     grid-gap: 5%;
-                    line-height: 25px;
-
                     .presentation {
                         h2 {
                             text-transform: capitalize;
                         }
                         .text {
                             p {
-                                text-align: justify;
                             }
                         }
                         .features {
@@ -168,8 +167,9 @@ html {
                     }
 
                     .image {
+                       
                         img {
-                            max-width: 100%;
+                            
                         }
                     }
                 }
