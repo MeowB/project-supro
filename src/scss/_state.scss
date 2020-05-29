@@ -3,7 +3,6 @@
     
   @media screen and (max-width: 968px){
       background: #fff;
-      color: #ccc;
     }
   
 
@@ -16,10 +15,7 @@
         @media screen and (min-width: 968px) {
         background-color: $color-banner;
         display: none;
-      }
-
-      &--hamburger > div {
-        background-color: #ccc;
+        
       }
     }
     
@@ -30,4 +26,13 @@
       }
     }
   }
+
+  p{
+    color: #999;
+  }
 }
+
+.reverse{
+  transform: rotateZ(90deg);
+}
+
