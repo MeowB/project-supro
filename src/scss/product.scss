@@ -6,6 +6,12 @@ $color_size: lightgrey;
 $borderCercle: 20px;
 $borderColor: grey;
 
+@media only screen and (max-device-width:480px) {
+    body {
+    background-color:black;
+    color:white
+    }
+
 html {
     main {
         width: 75%;
