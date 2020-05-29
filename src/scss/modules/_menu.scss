@@ -1,5 +1,6 @@
 .header {
   &__icon {
+
     /*Hamburger Background*/
     &--menuwrap {
       width: 24px;
@@ -7,12 +8,14 @@
       background: #fff;
       display: flex;
       
-
-
+      
       &--toggler{
         cursor: pointer;
         opacity: 1;
-        padding: 0;
+        padding: 0; 
+        width: 60px;
+        height: 60px;
+        
       }
 
       &--hamburger{
@@ -67,19 +70,77 @@
       &--toggler:checked:hover + &--hamburger > div {
         transform: rotate(225deg);
       }
+        /* Show Menu */
+      &--toggler:checked ~ &--menu{
+        visibility: visible;
 
+         & > div {
+           transform: scale(1);
+           transition-duration: $menu-speed;
 
+            & > div {
+              opacity: 1;
+              transition: opacity 0.4s ease 0.4s;
+            }
+         }
+      }
 
+      /*  positionning  */
+      &--menu{
+        position: absolute;
+        top: 20%;
+        left: 5%;
+        width: 80%;
+        height: 100%;
+        visibility: hidden;
+        overflow: hidden;
+        display: flex;
+        align-items: center;  
+        justify-content: center;
+        
+        & > div {
+          background: #coral;
+          border-radius: 50%;
+          width: 200vw;
+          height: 200vw;
+          display: flex;
+          flex: none;
+          align-items: center;
+          justify-content: center;
+          transform: scale(0);
+          transition: all 0.4s ease;
+  
+          & > div {
+            text-align: left;
+            max-width: 90vw;
+            max-height: 80vh;
+            margin-bottom: 180px;
+            opacity: 0;
+            transition: opacity 0.4s ease;
 
             
-      /*      left: 40px;
-            .toggler > div::after{
-            left: 0;
+            h1 {
+              color: $color-text;
+            }
+
+            & > ul > li {
+              list-style: none;
+              text-align: left;
+              font-size: 1.5rem;
+              padding: 0.65rem;
+              border-bottom: 1px solid #ccc;
+              width: 80vw;
+
+
+              & > a{
+                color: #999;
+              }
+            }
+  
           }
-            .hamburger > div::after{
-            left: 0;
-          }
-      */
+        }
+
+      }
     }
   }
 }

@@ -117,19 +117,15 @@ a {
   /* Toggler Animation */
   /* Turns Lines Into X */
   /* Rotate On Hover When Checked */
-  /*      left: 40px;
-        .toggler > div::after{
-        left: 0;
-      }
-        .hamburger > div::after{
-        left: 0;
-      }
-  */
+  /* Show Menu */
+  /*  positionning  */
 }
 .header__icon--menuwrap--toggler {
   cursor: pointer;
   opacity: 1;
   padding: 0;
+  width: 60px;
+  height: 60px;
 }
 .header__icon--menuwrap--hamburger {
   padding: 0;
@@ -169,30 +165,81 @@ a {
 .header__icon--menuwrap--toggler:checked:hover + .header__icon--menuwrap--hamburger > div {
   transform: rotate(225deg);
 }
+.header__icon--menuwrap--toggler:checked ~ .header__icon--menuwrap--menu {
+  visibility: visible;
+}
+.header__icon--menuwrap--toggler:checked ~ .header__icon--menuwrap--menu > div {
+  transform: scale(1);
+  transition-duration: 0.75s;
+}
+.header__icon--menuwrap--toggler:checked ~ .header__icon--menuwrap--menu > div > div {
+  opacity: 1;
+  transition: opacity 0.4s ease 0.4s;
+}
+.header__icon--menuwrap--menu {
+  position: absolute;
+  top: 20%;
+  left: 5%;
+  width: 80%;
+  height: 100%;
+  visibility: hidden;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header__icon--menuwrap--menu > div {
+  background: #coral;
+  border-radius: 50%;
+  width: 200vw;
+  height: 200vw;
+  display: flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  transform: scale(0);
+  transition: all 0.4s ease;
+}
+.header__icon--menuwrap--menu > div > div {
+  text-align: left;
+  max-width: 90vw;
+  max-height: 80vh;
+  margin-bottom: 180px;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+.header__icon--menuwrap--menu > div > div h1 {
+  color: #222;
+}
+.header__icon--menuwrap--menu > div > div > ul > li {
+  list-style: none;
+  text-align: left;
+  font-size: 1.5rem;
+  padding: 0.65rem;
+  border-bottom: 1px solid #ccc;
+  width: 80vw;
+}
+.header__icon--menuwrap--menu > div > div > ul > li > a {
+  color: #999;
+}
 
 @media screen and (max-width: 968px) {
   .header {
     background: #fff;
+    color: #ccc;
   }
 }
 .header__item:hover {
   transform: scale(1.04);
 }
-.header__icon--menuwrap--hamburger {
-  display: block;
-}
 @media screen and (min-width: 968px) {
-  .header__icon--menuwrap--hamburger {
+  .header__icon--menuwrap {
+    background-color: #F2EDE9;
     display: none;
   }
 }
-.header__icon--menuwrap--toggler {
-  display: block;
-}
-@media screen and (min-width: 968px) {
-  .header__icon--menuwrap--toggler {
-    display: none;
-  }
+.header__icon--menuwrap--hamburger > div {
+  background-color: #ccc;
 }
 .header__icon--search {
   display: block;

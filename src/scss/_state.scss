@@ -1,38 +1,33 @@
 
 .header{
     
-    @media screen and (max-width: 968px){
-        background: #fff;
+  @media screen and (max-width: 968px){
+      background: #fff;
+      color: #ccc;
+    }
+  
+
+  &__item:hover{
+      transform: scale(1.04);
+    }
+
+  &__icon {
+    &--menuwrap{
+        @media screen and (min-width: 968px) {
+        background-color: $color-banner;
+        display: none;
+      }
+
+      &--hamburger > div {
+        background-color: #ccc;
+      }
     }
     
-
-    &__item:hover{
-        transform: scale(1.04);
+    &--search{
+      display: block;
+      @media screen and (min-width: 968px) {
+        display: none;
+      }
     }
-
-    &__icon {
-        &--menuwrap{
-          &--hamburger{
-            display: block;
-            @media screen and (min-width: 968px) {
-              display: none;
-            }
-          }
-
-          &--toggler{
-            
-            display: block;
-            @media screen and (min-width: 968px) {
-              display: none;
-            }
-          }
-        }
-        
-        &--search{
-          display: block;
-          @media screen and (min-width: 968px) {
-            display: none;
-          }
-         }
-        }
+  }
 }
