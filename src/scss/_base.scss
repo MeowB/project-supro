@@ -9,6 +9,12 @@
     
   }
 
+  html{
+    p{
+      color: #999;
+    }
+  }
+  
   body {
     margin: 0;
     line-height: 1.4;
@@ -32,10 +38,4 @@
 
   a{
       color: $color-text;
-  }
-
-  header{
-    p{
-      color: #999;
-    }
   }

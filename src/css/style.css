@@ -8,6 +8,10 @@
   vertical-align: baseline;
 }
 
+html p {
+  color: #999;
+}
+
 body {
   margin: 0;
   line-height: 1.4;
@@ -30,15 +34,11 @@ a {
   color: #222;
 }
 
-header p {
-  color: #999;
-}
-
 .header {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
-  background: #F2EDE9;
+  background: #eeeeee;
   color: #000;
   padding: 0 1rem;
   height: 80px;
@@ -347,6 +347,25 @@ header p {
     display: flex;
   }
 }
+.main {
+  border: 2px solid;
+  position: relative;
+  width: 100%;
+}
+.main__banner {
+  position: relative;
+  width: 100%;
+  background-color: #eeeeee;
+}
+.main__banner__bottom--container {
+  background-image: url(../homepage/resources/deals_image.jpg);
+  background-size: cover;
+  background-position: center;
+  border: 1px solid red;
+  position: relative;
+  text-align: left;
+  height: 400px;
+}
 @media screen and (max-width: 800px) {
   .header {
     background: #fff;
@@ -357,7 +376,7 @@ header p {
 }
 @media screen and (min-width: 800px) {
   .header__icon--menuwrap {
-    background-color: #F2EDE9;
+    background-color: #eeeeee;
     display: none;
   }
 }
