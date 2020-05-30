@@ -5,7 +5,9 @@
   background: $color_banner;
   color: #000;
   padding: 0 1rem;
+  height: 80px;
 
+  /*  search bar */
   input{
     border-radius: 15px;
     outline: none;
@@ -25,13 +27,6 @@
     flex: 1;
   }
   
-  &__logo {
-    text-decoration: none;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #fff;
-    margin-right: 40px;
-  }
   
   &__nav{
     display: none;

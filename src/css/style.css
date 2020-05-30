@@ -3,12 +3,27 @@
   list-style: none;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 
 body {
   margin: 0;
   line-height: 1.4;
+  font-family: "Roboto", sans-serif;
+}
+body h1 {
+  font-size: 32px;
+  font-weight: 700;
+}
+body h2 {
+  font-size: 24px;
+  font-weight: 600;
+}
+body h3 {
+  font-size: 18.72px;
+  font-weight: 500;
 }
 
 a {
@@ -26,6 +41,8 @@ header p {
   background: #F2EDE9;
   color: #000;
   padding: 0 1rem;
+  height: 80px;
+  /*  search bar */
 }
 .header input {
   border-radius: 15px;
@@ -41,13 +58,6 @@ header p {
 }
 .header__logo, .header__media {
   flex: 1;
-}
-.header__logo {
-  text-decoration: none;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #fff;
-  margin-right: 40px;
 }
 .header__nav {
   display: none;
@@ -126,6 +136,7 @@ header p {
   /*  positionning  */
 }
 .header__icon--menuwrap--toggler {
+  z-index: 10;
   cursor: pointer;
   opacity: 1;
   padding: 0;
@@ -133,6 +144,7 @@ header p {
   height: 60px;
 }
 .header__icon--menuwrap--hamburger {
+  pointer-events: none;
   padding: 0;
   margin-left: -25px;
   margin-top: 10px;
@@ -183,12 +195,11 @@ header p {
 }
 .header__icon--menuwrap--menu {
   position: fixed;
-  top: 90px;
+  top: 80px;
   left: 0;
   width: 100%;
   height: 100%;
   margin: auto;
-  visibility: hidden;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -208,13 +219,13 @@ header p {
   transition: all 0.4s ease;
 }
 .header__icon--menuwrap--menu > div > div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: left;
-  max-width: 90vw;
-  max-height: 80vw;
-  margin-bottom: 180px;
   opacity: 0;
   transition: opacity 0.4s ease;
-  margin-left: 30px;
 }
 .header__icon--menuwrap--menu > div > div h1 {
   color: #222;
@@ -236,8 +247,7 @@ header p {
   position: absolute;
   width: 100%;
   bottom: 0;
-  height: 350px;
-  margin: 0 10%;
+  height: 300px;
   justify-content: center;
 }
 .footer .nonephone {
@@ -246,51 +256,97 @@ header p {
 .footer .left {
   display: block;
   float: left;
-  width: 49%;
+  width: 46%;
   height: 200px;
 }
 .footer .right {
   display: block;
   float: right;
-  width: 50%;
+  width: 46%;
   height: 200px;
 }
-.footer__contact {
-  color: #999;
-  height: 200px;
+.footer__listwrap {
+  display: table;
 }
 .footer__list {
-  position: relative;
-  height: 70%;
   font-size: 12px;
   color: #999;
+  margin: 1em 2%;
+  margin-bottom: 10px;
+  height: 200px;
+  display: table-cell;
 }
 .footer__list h3 {
   text-align: left;
-  margin-bottom: 40px;
+  margin: 20px 0;
   color: #000;
 }
-.footer__list > ul > li {
+.footer__list > ul > img {
   margin-bottom: 15px;
+}
+.footer__list > ul > li {
+  margin: 15px 0;
+  font-size: 140%;
 }
 .footer__icon {
   position: relative;
   color: #999;
-  display: flex;
-  width: 100%;
   justify-content: center;
+  border-top: 1px solid;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
 .footer__icon > div {
-  border-top: 1px solid;
-  align-self: center;
+  width: 100%;
+  text-align: center;
+}
+.footer__icon div > ul {
+  padding: 0 5em;
 }
 .footer__icon ul > li {
-  display: inline-block;
+  display: inline;
 }
 .footer__icon a {
   color: #999;
 }
+.footer .down {
+  width: 100%;
+  display: flex;
+}
 
+@media screen and (min-width: 800px) {
+  .footer__list {
+    padding: 0 4em;
+  }
+  .footer .left {
+    display: block;
+    width: auto;
+    height: 200px;
+  }
+  .footer .right {
+    display: block;
+    width: auto;
+    height: 200px;
+  }
+  .footer .nonephone {
+    display: flex;
+  }
+  .footer .nonedesk {
+    display: none;
+  }
+  .footer .up {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 70px;
+  }
+  .footer .down {
+    width: 100%;
+    display: flex;
+  }
+}
 @media screen and (max-width: 800px) {
   .header {
     background: #fff;
@@ -314,29 +370,6 @@ header p {
   }
 }
 
-@media screen and (min-width: 800px) {
-  .footer .nonephone {
-    display: flex;
-  }
-  .footer .nonedesk {
-    display: none;
-  }
-  .footer .up {
-    position: relative;
-    width: 100%;
-    display: flex;
-    height: 200px;
-    justify-content: center;
-  }
-  .footer .down {
-    width: 100%;
-    display: flex;
-    height: 150px;
-  }
-  .footer__list {
-    margin: 0% 3%;
-  }
-}
 /* retourner une image */
 .reverse {
   transform: rotateZ(90deg);
