@@ -9,10 +9,20 @@
     
   }
 
+
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
+
   html{
     p{
       color: #999;
     }
+  }
+
+  main{
+    min-height: 100%;
   }
   
   body {
@@ -21,7 +31,7 @@
     font-family: 'Roboto', sans-serif;
 
     h1{
-      font-size: 32px;
+      font-size: 58px;
       font-weight: 700;
     }
     

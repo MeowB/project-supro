@@ -2,13 +2,22 @@
 
 ## bugs:
 * ~~hamburger hitbox~~
-I fixed it by adding  "pointer-events: none;" on everything getting above the toggler checkbox ( class: "header__icon--menuwrap--hamburger")
+Solution: adding  "pointer-events: none;" on everything getting above the toggler checkbox ( class: "header__icon--menuwrap--hamburger")
+
+* when the hamburger menu is toggled, the navbar still scroll trough the page
+Solution: getting the menu background div to cover the whole screen and added a higher "z-index" to the cross and the toggler,
+new bug is that both of them was disapearing when scrolling down, i couls get the toggler to be fixed while toggle but not the cross.
+
+
 
 * ~~footer width right, icons out of page~~
-i fixed it by fixing HTML markup and getting rid of useless divs
+Solution: fixing HTML markup and getting rid of useless divs
 
 * ~~footer list collapsing on small screen~~
-i fixed it by settingup a list wrapper, displaying it as a table and then each lists as a table cell with 'display: " ";' ( class:"footer__listwrap" & "footer__list" )
+Solution: settingup a list wrapper, displaying it as a table and then each lists as a table cell with 'display: " ";' ( class:"footer__listwrap" & "footer__list" )
 
-* footer going through main content
+* ~~footer going through main content~~
+fixed, idk how...
+
+
 

@@ -2,22 +2,125 @@
     border: 2px solid;
     position: relative;
     width: 100%;
+
+    a {
+        text-decoration: underline;
+    }
+
+
+
     &__banner{
         position: relative;
-        width: 100%;
+        width: 85%;
         background-color: $color-banner;
+        margin: auto;
 
         
         &__bottom--container {
             background-image: url(../homepage/resources/deals_image.jpg);
             background-size: cover;
             background-position: center;
-            border: 1px solid red;
             position: relative;
             text-align: left;
-            height: 400px;
+            height: 450px;
+
             &--wrapper{
+                width: 350px;
+                margin: auto;
+                width: 90%;
+
+                > a {
+                    position: absolute;
+                    bottom: 12%;
+                }
+            }
+        }
+
+        &__top--container {
+            background-image: url(../homepage/resources/abc.jpg);
+            background-size: 500%;
+            background-position-x: -80px;
+            background-position-y: center;
+            background-repeat: no-repeat;
+            background-color: $color_banner;
+
+            position: relative;
+            text-align: left;
+            height: 100vh;
+
+            .icon {
+                position: absolute;
+                margin: auto;
+                height: 80px;
+                bottom: 0;
+                border-top: 1px solid rgb(230, 230, 230);
+                width: 100%;
+                text-align: center;
+                
+                ul > li {
+                    display: inline;
+                    margin: 0 10px;
+                }
+        
+                a{
+                    color: #999;
+                }
+            }
+            
+            
+            &--wrapper{
+                margin-left: 5%;
+                padding: 37vh 0;
+
+                > p {
+                    color: #f3beb5;
+                    font-size: 130%;
+                }
             }
         }
     }
+}
+
+.counter {
+    position: relative;
+    background-color: #ffffff;
+    max-width: 350px;
+    height: 110px;
+    img{
+        width: 70%;
+        height: auto;
+    }
+}
+
+.save50{
+    background-color: #f68773;
+    border-radius: 5px;
+    font-size: 80%;
+    width: 70px;
+    padding: 2px 4px;
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+@media screen and (min-width: 800px){
+    .main{
+        &__banner{
+            width: 100%;
+            &__bottom--container {
+                &--wrapper{
+                    margin-left: 20%;
+                }
+            }
+            &__top--container {
+                background-size: cover;
+            }
+        }
+    }
+
+    .counter{
+        margin: 0;
+    }
+    
 }
