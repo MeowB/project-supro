@@ -25,7 +25,7 @@ body {
     line-height: 1.4;
 }
 
-//desktop
+//DESKTOP
 @media only screen and (min-width: 959px) {
     html {
         main {
@@ -291,6 +291,8 @@ body {
     }
 }
 
+
+//TABLET
 @media only screen and (min-width: 768px) and (max-width: 959px) {
     html {
         main {
@@ -558,6 +560,8 @@ body {
     }
 }
 
+
+//MOBILE
 @media only screen and (max-device-width: 767px) {
     html {
         main {
