@@ -1,13 +1,13 @@
 # Répartition 
 
  * Arthur
-  * Shop page
-  * 
+  * Shop page sauf header et footer
+  * Début page about si tout va bien
 
 * Mehdi
-  * Single product page
+  * Single product page sauf header et footer
   *
 
 * Scott
-  * Home page 
+  * Home page + header & footer
   * 
