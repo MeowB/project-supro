@@ -8,8 +8,8 @@ $borderColor: grey;
 $size: 12px;
 
 @font-face {
-	font-family: "Roboto";
-	src: url('../font/Roboto/Roboto-Regular.ttf');
+    font-family: "Roboto";
+    src: url("../font/Roboto/Roboto-Regular.ttf");
 }
 
 * {
@@ -19,12 +19,15 @@ $size: 12px;
     box-sizing: border-box;
 }
 
-html {
-    body {
-        margin: 0;
-        font-family: "Roboto", sans-serif;
-        line-height: 1.4;
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    line-height: 1.4;
+}
 
+//desktop
+@media only screen and (min-width: 959px) {
+    html {
         main {
             width: 75%;
             margin-left: auto;
@@ -142,7 +145,16 @@ html {
                                     font-size: $size;
                                 }
                             }
-
+                            .buying {
+                                .cart {
+                                    .add {
+                                        background-color: black;
+                                        color: white;
+                                    }
+                                }
+                                .buy {
+                                }
+                            }
                             .media-icons {
                                 ul {
                                     li {
@@ -265,217 +277,243 @@ html {
         }
     }
 }
-
 //MOBILE
 @media only screen and (max-device-width: 767px) {
-    html {
-        main {
-            article {
-                section {
-                    .grid-container {
-                        .image {
-                            .imageG {
-                                img {
-                                    max-width: 70%;
-                                }
-                            }
+    main {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
 
-                            .imageS {
-                                img {
-                                    max-width: 20%;
-                                    margin-left: 2%;
-                                }
+        article {
+            section {
+                .grid-container {
+                    display: grid;
+                    align-content: space-evenly;
+                    grid-template-columns: auto auto;
+                    grid-gap: 5%;
+
+                    .image {
+                        display: inline;
+                        list-style: none;
+                        margin: 10px;
+                        .imageG {
+                            img {
+                                max-width: 100%;
+                                margin-bottom: 4%;
                             }
                         }
 
-                        .review {
-                            h2 {
-                            }
-                            p {
-                                span {
-                                }
-                            }
-                            .color {
-                                .color1 {
-                                    height: $cercle;
-                                    width: $cercle;
-                                    border-radius: $borderCercle;
-                                    background-color: $color1;
-                                    list-style: none;
-                                    display: inline-block;
-                                    border: grey 3px Solid;
-                                    border: white 5px Solid;
-                                }
-
-                                .color2 {
-                                    height: $cercle;
-                                    width: $cercle;
-                                    border-radius: $borderCercle;
-                                    background-color: $color2;
-                                    list-style: none;
-                                    display: inline-block;
-                                    border: grey 3px Solid;
-                                    border: white 5px Solid;
-                                    outline: radius 1px solid red;
-                                }
-
-                                .color3 {
-                                    height: $cercle;
-                                    width: $cercle;
-                                    border-radius: $borderCercle;
-                                    background-color: $color3;
-                                    list-style: none;
-                                    display: inline-block;
-                                    border: grey 3px Solid;
-                                    border: white 5px Solid;
-                                }
-                            }
-
-                            .size {
-                                .small {
-                                    height: $cercle;
-                                    width: $cercle;
-                                    border-radius: $borderCercle;
-                                    background-color: $color_size;
-                                    text-align: center;
-                                    text-transform: capitalize;
-                                    list-style: none;
-                                    display: inline-block;
-                                    vertical-align: middle;
-                                    font-size: $size;
-                                }
-
-                                .medium {
-                                    height: $cercle;
-                                    width: $cercle;
-                                    border-radius: $borderCercle;
-                                    background-color: $color_size;
-                                    text-align: center;
-                                    text-transform: capitalize;
-                                    list-style: none;
-                                    display: inline-block;
-                                    vertical-align: middle;
-                                    font-size: $size;
-                                }
-
-                                .large {
-                                    height: $cercle;
-                                    width: $cercle;
-                                    border-radius: $borderCercle;
-                                    background-color: $color_size;
-                                    text-align: center;
-                                    text-transform: capitalize;
-                                    list-style: none;
-                                    display: inline-block;
-                                    vertical-align: middle;
-                                    font-size: $size;
-                                }
-                            }
-
-                            .media-icons {
-                                ul {
-                                    li {
-                                        display: inline;
-                                        list-style: none;
-                                        margin: 10px;
-                                    }
-                                }
+                        .imageS {
+                            img {
+                                max-width: 20%;
+                                margin-left: 2%;
                             }
                         }
                     }
-                }
 
-                section {
-                    .description {
-                        ul {
-                            margin-top: 50px;
-                            li {
+                    .review {
+                        h2 {
+                            text-transform: capitalize;
+                        }
+                        p {
+                            span {
+                                text-decoration: line-through;
                             }
                         }
-                    }
-                }
-
-                section {
-                    .grid-container-2 {
-                        display: grid;
-                        grid-template-columns: auto;
-                        line-height: 25px;
-                        margin-left: 1%;
-
-                        .presentation {
-                            h2 {
-                                text-transform: capitalize;
+                        .color {
+                            .color1 {
+                                height: $cercle;
+                                width: $cercle;
+                                border-radius: $borderCercle;
+                                background-color: $color1;
+                                list-style: none;
+                                display: inline-block;
+                                border: grey 3px Solid;
+                                border: white 5px Solid;
                             }
-                            .text {
-                                p {
-                                    text-align: justify;
-                                }
+
+                            .color2 {
+                                height: $cercle;
+                                width: $cercle;
+                                border-radius: $borderCercle;
+                                background-color: $color2;
+                                list-style: none;
+                                display: inline-block;
+                                border: grey 3px Solid;
+                                border: white 5px Solid;
+                                outline: radius 1px solid red;
+                            }
+
+                            .color3 {
+                                height: $cercle;
+                                width: $cercle;
+                                border-radius: $borderCercle;
+                                background-color: $color3;
+                                list-style: none;
+                                display: inline-block;
+                                border: grey 3px Solid;
+                                border: white 5px Solid;
                             }
                         }
 
-                        .features {
-                            h2 {
+                        .size {
+                            .small {
+                                height: $cercle;
+                                width: $cercle;
+                                border-radius: $borderCercle;
+                                background-color: $color_size;
+                                text-align: center;
                                 text-transform: capitalize;
+                                list-style: none;
+                                display: inline-block;
+                                vertical-align: middle;
+                                font-size: $size;
                             }
+
+                            .medium {
+                                height: $cercle;
+                                width: $cercle;
+                                border-radius: $borderCercle;
+                                background-color: $color_size;
+                                text-align: center;
+                                text-transform: capitalize;
+                                list-style: none;
+                                display: inline-block;
+                                vertical-align: middle;
+                                font-size: $size;
+                            }
+
+                            .large {
+                                height: $cercle;
+                                width: $cercle;
+                                border-radius: $borderCercle;
+                                background-color: $color_size;
+                                text-align: center;
+                                text-transform: capitalize;
+                                list-style: none;
+                                display: inline-block;
+                                vertical-align: middle;
+                                font-size: $size;
+                            }
+                        }
+                        .buying {
+                            .cart {
+                            }
+                            .buy {
+                            }
+                        }
+                        .media-icons {
                             ul {
                                 li {
-                                    text-align: justify;
-                                }
-                            }
-                        }
-
-                        .image {
-                            img {
-                                max-width: 75%;
-                            }
-                        }
-                    }
-                }
-
-                section {
-                    h2 {
-                        text-align: center;
-                        text-transform: capitalize;
-                    }
-
-                    h3 {
-                        text-align: center;
-                    }
-                    .grid-container-3 {
-                        display: grid;
-                        align-content: space-evenly;
-                        grid-template-columns: auto auto;
-
-                        figure {
-                            img {
-                                width: 80%;
-                            }
-                            figcaption {
-                                p {
-                                    span {
-                                        text-decoration: line-through;
-                                    }
+                                    display: inline;
+                                    list-style: none;
+                                    margin: 10px;
                                 }
                             }
                         }
                     }
                 }
+            }
 
-                section {
-                    .grid-container-4 {
-                        display: grid;
-                        align-content: space-evenly;
-                        grid-template-columns: auto auto;
+            section {
+                .description {
+                    ul {
+                        margin-left: auto;
+                        margin-right: auto;
+                        text-align: center;
+                        border-top: 1px solid lightgray;
+                        border-bottom: 1px solid lightgrey;
+                        li {
+                            list-style: none;
+                            text-transform: capitalize;
+                            display: inline-block;
+                            margin: 10px;
+                            padding-left: 2em;
+                        }
+                    }
+                }
+            }
 
-                        figure {
-                            img {
-                                width: 50%;
+            section {
+                .grid-container-2 {
+                    display: grid;
+                    grid-template-columns: auto;
+                    line-height: 25px;
+                    margin-left: auto;
+                    margin-right: auto;
+
+                    .presentation {
+                        h2 {
+                            text-transform: capitalize;
+                        }
+                        .text {
+                            p {
+                                text-align: justify;
                             }
-                            figcaption {
-                                p {
-                                    span {
-                                        text-decoration: line-through;
-                                    }
+                        }
+                    }
+
+                    .features {
+                        h2 {
+                            text-transform: capitalize;
+                        }
+                        ul {
+                            li {
+                                text-align: justify;
+                            }
+                        }
+                    }
+
+                    .image {
+                        img {
+                            max-width: 60%;
+                        }
+                    }
+                }
+            }
+
+            section {
+                h2 {
+                    text-align: center;
+                    text-transform: capitalize;
+                }
+
+                h3 {
+                    text-align: center;
+                }
+                .grid-container-3 {
+                    display: grid;
+                    align-content: space-evenly;
+                    grid-template-columns: auto;
+                    figure {
+                        img {
+                            max-width: 90%;
+                        }
+                        figcaption {
+                            p {
+                                span {
+                                    text-decoration: line-through;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            section {
+                .grid-container-4 {
+                    display: grid;
+                    align-content: space-evenly;
+                    grid-template-columns: auto;
+
+                    figure {
+                        img {
+                            max-width: 90%;
+                        }
+                        figcaption {
+                            p {
+                                span {
+                                    text-decoration: line-through;
                                 }
                             }
                         }
@@ -487,238 +525,241 @@ html {
 }
 //TABLET
 @media only screen and (min-width: 768px) and (max-width: 959px) {
-    html {
-        main {
-            width: 75%;
-            margin-left: auto;
-            margin-right: auto;
+    main {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
 
-            article {
-                section {
-                    .grid-container {
-                        display: grid;
-                        align-content: space-evenly;
-                        grid-template-columns: auto auto;
-                        grid-gap: 5%;
+        article {
+            section {
+                .grid-container {
+                    display: grid;
+                    align-content: space-evenly;
+                    grid-template-columns: auto auto;
+                    grid-gap: 5%;
 
-                        .image {
-                            display: inline;
-                            list-style: none;
-                            margin: 10px;
-                            .imageG {
-                                img {
-                                    max-width: 100%;
-                                    margin-bottom: 4%;
-                                }
-                            }
-
-                            .imageS {
-                                img {
-                                    max-width: 20%;
-                                    margin-left: 2%;
-                                }
+                    .image {
+                        display: inline;
+                        list-style: none;
+                        margin: 10px;
+                        .imageG {
+                            img {
+                                max-width: 100%;
+                                margin-bottom: 4%;
                             }
                         }
 
-                        .review {
-                            h2 {
-                                text-transform: capitalize;
+                        .imageS {
+                            img {
+                                max-width: 20%;
+                                margin-left: 2%;
                             }
+                        }
+                    }
+
+                    .review {
+                        h2 {
+                            text-transform: capitalize;
+                        }
+                        p {
+                            span {
+                                text-decoration: line-through;
+                            }
+                        }
+                        .color {
+                            .color1 {
+                                height: $cercle;
+                                width: $cercle;
+                                border-radius: $borderCercle;
+                                background-color: $color1;
+                                list-style: none;
+                                display: inline-block;
+                                border: grey 3px Solid;
+                                border: white 5px Solid;
+                            }
+
+                            .color2 {
+                                height: $cercle;
+                                width: $cercle;
+                                border-radius: $borderCercle;
+                                background-color: $color2;
+                                list-style: none;
+                                display: inline-block;
+                                border: grey 3px Solid;
+                                border: white 5px Solid;
+                                outline: radius 1px solid red;
+                            }
+
+                            .color3 {
+                                height: $cercle;
+                                width: $cercle;
+                                border-radius: $borderCercle;
+                                background-color: $color3;
+                                list-style: none;
+                                display: inline-block;
+                                border: grey 3px Solid;
+                                border: white 5px Solid;
+                            }
+                        }
+
+                        .size {
+                            .small {
+                                height: $cercle;
+                                width: $cercle;
+                                border-radius: $borderCercle;
+                                background-color: $color_size;
+                                text-align: center;
+                                text-transform: capitalize;
+                                list-style: none;
+                                display: inline-block;
+                                vertical-align: middle;
+                                font-size: $size;
+                            }
+
+                            .medium {
+                                height: $cercle;
+                                width: $cercle;
+                                border-radius: $borderCercle;
+                                background-color: $color_size;
+                                text-align: center;
+                                text-transform: capitalize;
+                                list-style: none;
+                                display: inline-block;
+                                vertical-align: middle;
+                                font-size: $size;
+                            }
+
+                            .large {
+                                height: $cercle;
+                                width: $cercle;
+                                border-radius: $borderCercle;
+                                background-color: $color_size;
+                                text-align: center;
+                                text-transform: capitalize;
+                                list-style: none;
+                                display: inline-block;
+                                vertical-align: middle;
+                                font-size: $size;
+                            }
+                        }
+                        .buying {
+                            .cart {
+                            }
+                            .buy {
+                            }
+                        }
+                        .media-icons {
+                            ul {
+                                li {
+                                    display: inline;
+                                    list-style: none;
+                                    margin: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            section {
+                .description {
+                    ul {
+                        margin-left: auto;
+                        margin-right: auto;
+                        text-align: center;
+                        border-top: 1px solid lightgray;
+                        border-bottom: 1px solid lightgrey;
+                        li {
+                            list-style: none;
+                            text-transform: capitalize;
+                            display: inline-block;
+                            margin: 10px;
+                            padding-left: 2em;
+                        }
+                    }
+                }
+            }
+
+            section {
+                .grid-container-2 {
+                    display: grid;
+                    grid-template-columns: auto;
+                    line-height: 25px;
+                    margin-left: auto;
+                    margin-right: auto;
+
+                    .presentation {
+                        h2 {
+                            text-transform: capitalize;
+                        }
+                        .text {
+                            p {
+                                text-align: justify;
+                            }
+                        }
+                    }
+
+                    .features {
+                        h2 {
+                            text-transform: capitalize;
+                        }
+                        ul {
+                            li {
+                                text-align: justify;
+                            }
+                        }
+                    }
+
+                    .image {
+                        img {
+                            max-width: 60%;
+                        }
+                    }
+                }
+            }
+
+            section {
+                h2 {
+                    text-align: center;
+                    text-transform: capitalize;
+                }
+
+                h3 {
+                    text-align: center;
+                }
+                .grid-container-3 {
+                    display: grid;
+                    align-content: space-evenly;
+                    grid-template-columns: auto auto;
+                    figure {
+                        img {
+                            max-width: 50%;
+                        }
+                        figcaption {
                             p {
                                 span {
                                     text-decoration: line-through;
                                 }
                             }
-                            .color {
-                                .color1 {
-                                    height: $cercle;
-                                    width: $cercle;
-                                    border-radius: $borderCercle;
-                                    background-color: $color1;
-                                    list-style: none;
-                                    display: inline-block;
-                                    border: grey 3px Solid;
-                                    border: white 5px Solid;
-                                }
-
-                                .color2 {
-                                    height: $cercle;
-                                    width: $cercle;
-                                    border-radius: $borderCercle;
-                                    background-color: $color2;
-                                    list-style: none;
-                                    display: inline-block;
-                                    border: grey 3px Solid;
-                                    border: white 5px Solid;
-                                    outline: radius 1px solid red;
-                                }
-
-                                .color3 {
-                                    height: $cercle;
-                                    width: $cercle;
-                                    border-radius: $borderCercle;
-                                    background-color: $color3;
-                                    list-style: none;
-                                    display: inline-block;
-                                    border: grey 3px Solid;
-                                    border: white 5px Solid;
-                                }
-                            }
-
-                            .size {
-                                .small {
-                                    height: $cercle;
-                                    width: $cercle;
-                                    border-radius: $borderCercle;
-                                    background-color: $color_size;
-                                    text-align: center;
-                                    text-transform: capitalize;
-                                    list-style: none;
-                                    display: inline-block;
-                                    vertical-align: middle;
-                                    font-size: $size;
-                                }
-
-                                .medium {
-                                    height: $cercle;
-                                    width: $cercle;
-                                    border-radius: $borderCercle;
-                                    background-color: $color_size;
-                                    text-align: center;
-                                    text-transform: capitalize;
-                                    list-style: none;
-                                    display: inline-block;
-                                    vertical-align: middle;
-                                    font-size: $size;
-                                }
-
-                                .large {
-                                    height: $cercle;
-                                    width: $cercle;
-                                    border-radius: $borderCercle;
-                                    background-color: $color_size;
-                                    text-align: center;
-                                    text-transform: capitalize;
-                                    list-style: none;
-                                    display: inline-block;
-                                    vertical-align: middle;
-                                    font-size: $size;
-                                }
-                            }
-
-                            .media-icons {
-                                ul {
-                                    li {
-                                        display: inline;
-                                        list-style: none;
-                                        margin: 10px;
-                                    }
-                                }
-                            }
                         }
                     }
                 }
+            }
 
-                section {
-                    .description {
-                        ul {
-                            margin-left: auto;
-                            margin-right: auto;
-                            text-align: center;
-                            border-top: 1px solid lightgray;
-                            border-bottom: 1px solid lightgrey;
-                            li {
-                                list-style: none;
-                                text-transform: capitalize;
-                                display: inline-block;
-                                margin: 10px;
-                                padding-left: 2em;
-                            }
+            section {
+                .grid-container-4 {
+                    display: grid;
+                    align-content: space-evenly;
+                    grid-template-columns: auto auto;
+
+                    figure {
+                        img {
+                            max-width: 50%;
                         }
-                    }
-                }
-
-                section {
-                    .grid-container-2 {
-                        display: grid;
-                        grid-template-columns: auto auto;
-                        line-height: 25px;
-                        margin-left: 1%;
-
-                        .presentation {
-                            h2 {
-                                text-transform: capitalize;
-                            }
-                            .text {
-                                p {
-                                    text-align: justify;
-                                }
-                            }
-                        }
-
-                        .features {
-                            h2 {
-                                text-transform: capitalize;
-                            }
-                            ul {
-                                li {
-                                    text-align: justify;
-                                }
-                            }
-                        }
-
-                        .image {
-                            img {
-                                max-width: 100%;
-                            }
-                        }
-                    }
-                }
-
-                section {
-                    h2 {
-                        text-align: center;
-                        text-transform: capitalize;
-                    }
-
-                    h3 {
-                        text-align: center;
-                    }
-                    .grid-container-3 {
-                        display: grid;
-                        align-content: space-evenly;
-                        grid-template-columns: auto auto ;
-
-                        figure {
-                            img {
-                                width: 125px;
-                            }
-                            figcaption {
-                                p {
-                                    span {
-                                        text-decoration: line-through;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-
-                section {
-                    .grid-container-4 {
-                        display: grid;
-                        align-content: space-evenly;
-                        grid-template-columns: auto auto ;
-
-                        figure {
-                            img {
-                                width: 125px;
-                            }
-                            figcaption {
-                                p {
-                                    span {
-                                        text-decoration: line-through;
-                                    }
+                        figcaption {
+                            p {
+                                span {
+                                    text-decoration: line-through;
                                 }
                             }
                         }
