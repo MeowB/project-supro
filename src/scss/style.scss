@@ -312,7 +312,7 @@ body {
                             margin: 10px;
                             .imageG {
                                 img {
-                                    max-width: 100%;
+                                    max-width: 60px;
                                     margin-bottom: 4%;
                                 }
                             }
@@ -426,10 +426,11 @@ body {
                                 }
                                 .buy {
                                     button {
-                                        width: 550px;
+                                        width: 120px;
                                         background-color: black;
                                         color: white;
                                         text-transform: uppercase;
+                                        text-align: center;
                                     }
                                 }
                             }

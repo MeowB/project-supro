@@ -178,7 +178,7 @@ body {
         list-style: none;
         margin: 10px; }
         html main article section .grid-container .image .imageG img {
-          max-width: 100%;
+          max-width: 60px;
           margin-bottom: 4%; }
         html main article section .grid-container .image .imageS img {
           max-width: 20%;
@@ -256,10 +256,11 @@ body {
         background-color: white;
         color: black; }
       html main article section .grid-container .review .buying .buy button {
-        width: 550px;
+        width: 120px;
         background-color: black;
         color: white;
-        text-transform: uppercase; }
+        text-transform: uppercase;
+        text-align: center; }
       html main article section .grid-container .review .media-icons ul li {
         display: inline;
         list-style: none;
