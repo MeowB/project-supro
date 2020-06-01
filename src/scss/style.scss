@@ -150,9 +150,23 @@ body {
                                     .add {
                                         background-color: black;
                                         color: white;
+                                        text-transform: uppercase;
+                                    }
+                                    .far fa-heart {
+                                        button {
+                                            background-color: white;
+                                            color: black;
+                                            
+                                        }
                                     }
                                 }
                                 .buy {
+                                    button {
+                                        width: 100px;
+                                        background-color: black;
+                                        color: white;
+                                        text-transform: uppercase;
+                                    }
                                 }
                             }
                             .media-icons {
@@ -398,114 +412,132 @@ body {
                         }
                         .buying {
                             .cart {
+                                .add {
+                                    background-color: black;
+                                    color: white;
+                                    text-transform: uppercase;
+                                }
+                                .far fa-heart {
+                                    button {
+                                        background-color: white;
+                                        color: black;
+                                        
+                                }
                             }
                             .buy {
-                            }
-                        }
-                        .media-icons {
-                            ul {
-                                li {
-                                    display: inline;
-                                    list-style: none;
-                                    margin: 10px;
+                                button {
+                                    width: 100px;
+                                    background-color: black;
+                                    color: white;
+                                    text-transform: uppercase;
+                                    }
                                 }
                             }
                         }
                     }
                 }
-            }
 
-            section {
-                .description {
-                    ul {
+                section {
+                    .description {
+                        ul {
+                            margin-left: auto;
+                            margin-right: auto;
+                            text-align: center;
+                            border-top: 1px solid lightgray;
+                            border-bottom: 1px solid lightgrey;
+                            li {
+                                list-style: none;
+                                text-transform: capitalize;
+                                display: inline-block;
+                                margin: 10px;
+                                padding-left: 2em;
+                            }
+                        }
+                    }
+                }
+
+                section {
+                    .grid-container-2 {
+                        display: grid;
+                        grid-template-columns: auto;
+                        line-height: 25px;
                         margin-left: auto;
                         margin-right: auto;
+
+                        .presentation {
+                            h2 {
+                                text-transform: capitalize;
+                            }
+                            .text {
+                                p {
+                                    text-align: justify;
+                                }
+                            }
+                        }
+
+                        .features {
+                            h2 {
+                                text-transform: capitalize;
+                            }
+                            ul {
+                                li {
+                                    text-align: justify;
+                                }
+                            }
+                        }
+
+                        .image {
+                            img {
+                                max-width: 60%;
+                            }
+                        }
+                    }
+                }
+
+                section {
+                    h2 {
                         text-align: center;
-                        border-top: 1px solid lightgray;
-                        border-bottom: 1px solid lightgrey;
-                        li {
-                            list-style: none;
-                            text-transform: capitalize;
-                            display: inline-block;
-                            margin: 10px;
-                            padding-left: 2em;
-                        }
+                        text-transform: capitalize;
                     }
-                }
-            }
 
-            section {
-                .grid-container-2 {
-                    display: grid;
-                    grid-template-columns: auto;
-                    line-height: 25px;
-                    margin-left: auto;
-                    margin-right: auto;
-
-                    .presentation {
-                        h2 {
-                            text-transform: capitalize;
-                        }
-                        .text {
-                            p {
-                                text-align: justify;
+                    h3 {
+                        text-align: center;
+                    }
+                    .grid-container-3 {
+                        display: grid;
+                        align-content: space-evenly;
+                        grid-template-columns: auto;
+                        figure {
+                            img {
+                                max-width: 90%;
                             }
-                        }
-                    }
-
-                    .features {
-                        h2 {
-                            text-transform: capitalize;
-                        }
-                        ul {
-                            li {
-                                text-align: justify;
-                            }
-                        }
-                    }
-
-                    .image {
-                        img {
-                            max-width: 60%;
-                        }
-                    }
-                }
-            }
-
-            section {
-                h2 {
-                    text-align: center;
-                    text-transform: capitalize;
-                }
-
-                h3 {
-                    text-align: center;
-                }
-                .grid-container-3 {
-                    display: grid;
-                    align-content: space-evenly;
-                    grid-template-columns: auto;
-                    figure {
-                        img {
-                            max-width: 90%;
-                        }
-                        figcaption {
-                            p {
-                                span {
-                                    text-decoration: line-through;
+                            figcaption {
+                                p {
+                                    span {
+                                        text-decoration: line-through;
+                                    }
                                 }
                             }
                         }
                     }
                 }
-            }
 
-            section {
-                .grid-container-4 {
-                    display: grid;
-                    align-content: space-evenly;
-                    grid-template-columns: auto;
+                section {
+                    .grid-container-4 {
+                        display: grid;
+                        align-content: space-evenly;
+                        grid-template-columns: auto;
 
+                        //TABLET
+                        @media only screen and (min-width: 768px) and (max-width: 959px) {
+                            main {
+                                width: 70%;
+                                margin-left: auto;
+                                margin-right: auto;
+                                background-color: blue;
+                            }
+                        }
+                    }
                     figure {
                         img {
                             max-width: 90%;
@@ -523,10 +555,10 @@ body {
         }
     }
 }
-//TABLET
+
 @media only screen and (min-width: 768px) and (max-width: 959px) {
     main {
-        width: 90%;
+        width: 70%;
         margin-left: auto;
         margin-right: auto;
 
@@ -644,122 +676,131 @@ body {
                         }
                         .buying {
                             .cart {
+                                .add {
+                                    background-color: black;
+                                    color: white;
+                                    text-transform: uppercase;
+                                }
+                                .far fa-heart {
+                                    button {
+                                        background-color: white;
+                                        color: black;
+                                       
+                                    }
+                                }
                             }
                             .buy {
-                            }
-                        }
-                        .media-icons {
-                            ul {
-                                li {
-                                    display: inline;
-                                    list-style: none;
-                                    margin: 10px;
+                                button {
+                                    width: 100px;
+                                    background-color: black;
+                                    color: white;
+                                    text-transform: uppercase;
                                 }
                             }
                         }
                     }
                 }
-            }
 
-            section {
-                .description {
-                    ul {
+                section {
+                    .description {
+                        ul {
+                            margin-left: auto;
+                            margin-right: auto;
+                            text-align: center;
+                            border-top: 1px solid lightgray;
+                            border-bottom: 1px solid lightgrey;
+                            li {
+                                list-style: none;
+                                text-transform: capitalize;
+                                display: inline-block;
+                                margin: 10px;
+                                padding-left: 2em;
+                            }
+                        }
+                    }
+                }
+
+                section {
+                    .grid-container-2 {
+                        display: grid;
+                        grid-template-columns: auto;
+                        line-height: 25px;
                         margin-left: auto;
                         margin-right: auto;
+
+                        .presentation {
+                            h2 {
+                                text-transform: capitalize;
+                            }
+                            .text {
+                                p {
+                                    text-align: justify;
+                                }
+                            }
+                        }
+
+                        .features {
+                            h2 {
+                                text-transform: capitalize;
+                            }
+                            ul {
+                                li {
+                                    text-align: justify;
+                                }
+                            }
+                        }
+
+                        .image {
+                            img {
+                                max-width: 60%;
+                            }
+                        }
+                    }
+                }
+
+                section {
+                    h2 {
                         text-align: center;
-                        border-top: 1px solid lightgray;
-                        border-bottom: 1px solid lightgrey;
-                        li {
-                            list-style: none;
-                            text-transform: capitalize;
-                            display: inline-block;
-                            margin: 10px;
-                            padding-left: 2em;
-                        }
+                        text-transform: capitalize;
                     }
-                }
-            }
 
-            section {
-                .grid-container-2 {
-                    display: grid;
-                    grid-template-columns: auto;
-                    line-height: 25px;
-                    margin-left: auto;
-                    margin-right: auto;
-
-                    .presentation {
-                        h2 {
-                            text-transform: capitalize;
-                        }
-                        .text {
-                            p {
-                                text-align: justify;
+                    h3 {
+                        text-align: center;
+                    }
+                    .grid-container-3 {
+                        display: grid;
+                        align-content: space-evenly;
+                        grid-template-columns: auto auto;
+                        figure {
+                            img {
+                                max-width: 50%;
                             }
-                        }
-                    }
-
-                    .features {
-                        h2 {
-                            text-transform: capitalize;
-                        }
-                        ul {
-                            li {
-                                text-align: justify;
-                            }
-                        }
-                    }
-
-                    .image {
-                        img {
-                            max-width: 60%;
-                        }
-                    }
-                }
-            }
-
-            section {
-                h2 {
-                    text-align: center;
-                    text-transform: capitalize;
-                }
-
-                h3 {
-                    text-align: center;
-                }
-                .grid-container-3 {
-                    display: grid;
-                    align-content: space-evenly;
-                    grid-template-columns: auto auto;
-                    figure {
-                        img {
-                            max-width: 50%;
-                        }
-                        figcaption {
-                            p {
-                                span {
-                                    text-decoration: line-through;
+                            figcaption {
+                                p {
+                                    span {
+                                        text-decoration: line-through;
+                                    }
                                 }
                             }
                         }
                     }
                 }
-            }
 
-            section {
-                .grid-container-4 {
-                    display: grid;
-                    align-content: space-evenly;
-                    grid-template-columns: auto auto;
+                section {
+                    .grid-container-4 {
+                        display: grid;
+                        align-content: space-evenly;
+                        grid-template-columns: auto auto;
 
-                    figure {
-                        img {
-                            max-width: 50%;
-                        }
-                        figcaption {
-                            p {
-                                span {
-                                    text-decoration: line-through;
+                        figure {
+                            img {
+                                max-width: 50%;
+                            }
+                            figcaption {
+                                p {
+                                    span {
+                                        text-decoration: line-through;
+                                    }
                                 }
                             }
                         }

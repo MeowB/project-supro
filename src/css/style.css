@@ -100,7 +100,16 @@ body {
         font-size: 12px; }
       html main article section .grid-container .review .buying .cart .add {
         background-color: black;
-        color: white; }
+        color: white;
+        text-transform: uppercase; }
+      html main article section .grid-container .review .buying .cart .far fa-heart button {
+        background-color: white;
+        color: black; }
+      html main article section .grid-container .review .buying .buy button {
+        width: 100px;
+        background-color: black;
+        color: white;
+        text-transform: uppercase; }
       html main article section .grid-container .review .media-icons ul li {
         display: inline;
         list-style: none;
@@ -239,63 +248,79 @@ body {
         display: inline-block;
         vertical-align: middle;
         font-size: 12px; }
-      main article section .grid-container .review .media-icons ul li {
-        display: inline;
-        list-style: none;
-        margin: 10px; }
-    main article section .description ul {
+      main article section .grid-container .review .buying .cart .add {
+        background-color: black;
+        color: white;
+        text-transform: uppercase; }
+      main article section .grid-container .review .buying .cart .far fa-heart button {
+        background-color: white;
+        color: black; }
+      main article section .grid-container .review .buying .cart .buy button {
+        width: 100px;
+        background-color: black;
+        color: white;
+        text-transform: uppercase; }
+    main article section section .description ul {
       margin-left: auto;
       margin-right: auto;
       text-align: center;
       border-top: 1px solid lightgray;
       border-bottom: 1px solid lightgrey; }
-      main article section .description ul li {
+      main article section section .description ul li {
         list-style: none;
         text-transform: capitalize;
         display: inline-block;
         margin: 10px;
         padding-left: 2em; }
-    main article section .grid-container-2 {
+    main article section section .grid-container-2 {
       display: grid;
       grid-template-columns: auto;
       line-height: 25px;
       margin-left: auto;
       margin-right: auto; }
-      main article section .grid-container-2 .presentation h2 {
+      main article section section .grid-container-2 .presentation h2 {
         text-transform: capitalize; }
-      main article section .grid-container-2 .presentation .text p {
+      main article section section .grid-container-2 .presentation .text p {
         text-align: justify; }
-      main article section .grid-container-2 .features h2 {
+      main article section section .grid-container-2 .features h2 {
         text-transform: capitalize; }
-      main article section .grid-container-2 .features ul li {
+      main article section section .grid-container-2 .features ul li {
         text-align: justify; }
-      main article section .grid-container-2 .image img {
+      main article section section .grid-container-2 .image img {
         max-width: 60%; }
-    main article section h2 {
+    main article section section h2 {
       text-align: center;
       text-transform: capitalize; }
-    main article section h3 {
+    main article section section h3 {
       text-align: center; }
-    main article section .grid-container-3 {
+    main article section section .grid-container-3 {
       display: grid;
       align-content: space-evenly;
       grid-template-columns: auto; }
-      main article section .grid-container-3 figure img {
+      main article section section .grid-container-3 figure img {
         max-width: 90%; }
-      main article section .grid-container-3 figure figcaption p span {
+      main article section section .grid-container-3 figure figcaption p span {
         text-decoration: line-through; }
-    main article section .grid-container-4 {
+    main article section section .grid-container-4 {
       display: grid;
       align-content: space-evenly;
-      grid-template-columns: auto; }
-      main article section .grid-container-4 figure img {
-        max-width: 90%; }
-      main article section .grid-container-4 figure figcaption p span {
-        text-decoration: line-through; } }
+      grid-template-columns: auto; } }
+    @media only screen and (max-device-width: 767px) and (min-width: 768px) and (max-width: 959px) {
+      main article section section .grid-container-4 main {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: blue; } }
+
+@media only screen and (max-device-width: 767px) {
+    main article section section figure img {
+      max-width: 90%; }
+    main article section section figure figcaption p span {
+      text-decoration: line-through; } }
 
 @media only screen and (min-width: 768px) and (max-width: 959px) {
   main {
-    width: 90%;
+    width: 70%;
     margin-left: auto;
     margin-right: auto; }
     main article section .grid-container {
@@ -378,56 +403,64 @@ body {
         display: inline-block;
         vertical-align: middle;
         font-size: 12px; }
-      main article section .grid-container .review .media-icons ul li {
-        display: inline;
-        list-style: none;
-        margin: 10px; }
-    main article section .description ul {
+      main article section .grid-container .review .buying .cart .add {
+        background-color: black;
+        color: white;
+        text-transform: uppercase; }
+      main article section .grid-container .review .buying .cart .far fa-heart button {
+        background-color: white;
+        color: black; }
+      main article section .grid-container .review .buying .buy button {
+        width: 100px;
+        background-color: black;
+        color: white;
+        text-transform: uppercase; }
+    main article section section .description ul {
       margin-left: auto;
       margin-right: auto;
       text-align: center;
       border-top: 1px solid lightgray;
       border-bottom: 1px solid lightgrey; }
-      main article section .description ul li {
+      main article section section .description ul li {
         list-style: none;
         text-transform: capitalize;
         display: inline-block;
         margin: 10px;
         padding-left: 2em; }
-    main article section .grid-container-2 {
+    main article section section .grid-container-2 {
       display: grid;
       grid-template-columns: auto;
       line-height: 25px;
       margin-left: auto;
       margin-right: auto; }
-      main article section .grid-container-2 .presentation h2 {
+      main article section section .grid-container-2 .presentation h2 {
         text-transform: capitalize; }
-      main article section .grid-container-2 .presentation .text p {
+      main article section section .grid-container-2 .presentation .text p {
         text-align: justify; }
-      main article section .grid-container-2 .features h2 {
+      main article section section .grid-container-2 .features h2 {
         text-transform: capitalize; }
-      main article section .grid-container-2 .features ul li {
+      main article section section .grid-container-2 .features ul li {
         text-align: justify; }
-      main article section .grid-container-2 .image img {
+      main article section section .grid-container-2 .image img {
         max-width: 60%; }
-    main article section h2 {
+    main article section section h2 {
       text-align: center;
       text-transform: capitalize; }
-    main article section h3 {
+    main article section section h3 {
       text-align: center; }
-    main article section .grid-container-3 {
+    main article section section .grid-container-3 {
       display: grid;
       align-content: space-evenly;
       grid-template-columns: auto auto; }
-      main article section .grid-container-3 figure img {
+      main article section section .grid-container-3 figure img {
         max-width: 50%; }
-      main article section .grid-container-3 figure figcaption p span {
+      main article section section .grid-container-3 figure figcaption p span {
         text-decoration: line-through; }
-    main article section .grid-container-4 {
+    main article section section .grid-container-4 {
       display: grid;
       align-content: space-evenly;
       grid-template-columns: auto auto; }
-      main article section .grid-container-4 figure img {
+      main article section section .grid-container-4 figure img {
         max-width: 50%; }
-      main article section .grid-container-4 figure figcaption p span {
+      main article section section .grid-container-4 figure figcaption p span {
         text-decoration: line-through; } }
