@@ -18,6 +18,12 @@ body {
     width: 75%;
     margin-left: auto;
     margin-right: auto; }
+    html main article section .home {
+      margin-top: 2%;
+      margin-bottom: 5%;
+      text-transform: capitalize; }
+      html main article section .home span {
+        color: gray; }
     html main article section .grid-container {
       display: grid;
       align-content: space-evenly;
@@ -178,7 +184,7 @@ body {
         list-style: none;
         margin: 10px; }
         html main article section .grid-container .image .imageG img {
-          max-width: 60px;
+          max-width: 75%;
           margin-bottom: 4%; }
         html main article section .grid-container .image .imageS img {
           max-width: 20%;
@@ -330,7 +336,7 @@ body {
         list-style: none;
         margin: 10px; }
         html main article section .grid-container .image .imageG img {
-          max-width: 100%;
+          max-width: 70%;
           margin-bottom: 4%; }
         html main article section .grid-container .image .imageS img {
           max-width: 20%;

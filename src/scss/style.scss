@@ -35,6 +35,14 @@ body {
 
             article {
                 section {
+                    .home{
+                        margin-top: 2%;
+                        margin-bottom: 5%;
+                        text-transform: capitalize;
+                        span{
+                            color:gray;
+                        }
+                    }
                     .grid-container {
                         display: grid;
                         align-content: space-evenly;
@@ -147,6 +155,13 @@ body {
                             }
                             .buying {
                                 .cart {
+                                    input{
+                                        .number{
+
+                                        width: 5%;
+                                    }
+
+                                    }
                                     .add {
                                         background-color: black;
                                         color: white;
@@ -291,7 +306,6 @@ body {
     }
 }
 
-
 //TABLET
 @media only screen and (min-width: 768px) and (max-width: 959px) {
     html {
@@ -302,6 +316,13 @@ body {
 
             article {
                 section {
+                    .home{
+                        margin-top: 2%;
+                        margin-bottom: 5%;
+                        text-transform: capitalize;
+                        span{
+                            color:gray;
+                        }
                     .grid-container {
                         display: grid;
                         align-content: space-evenly;
@@ -314,7 +335,7 @@ body {
                             margin: 10px;
                             .imageG {
                                 img {
-                                    max-width: 60px;
+                                    max-width: 75%;
                                     margin-bottom: 4%;
                                 }
                             }
@@ -560,7 +581,6 @@ body {
     }
 }
 
-
 //MOBILE
 @media only screen and (max-device-width: 767px) {
     html {
@@ -571,6 +591,13 @@ body {
 
             article {
                 section {
+                    .home{
+                        margin-top: 2%;
+                        margin-bottom: 5%;
+                        text-transform: capitalize;
+                        span{
+                            color:gray;
+                        }
                     .grid-container {
                         display: grid;
                         align-content: space-evenly;
@@ -583,7 +610,7 @@ body {
                             margin: 10px;
                             .imageG {
                                 img {
-                                    max-width: 100%;
+                                    max-width: 70%;
                                     margin-bottom: 4%;
                                 }
                             }
@@ -807,7 +834,7 @@ body {
                     .grid-container-4 {
                         display: grid;
                         align-content: space-evenly;
-                        grid-template-columns: auto ;
+                        grid-template-columns: auto;
 
                         figure {
                             img {

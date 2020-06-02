@@ -1,0 +1,33 @@
+@font-face {
+    font-family: "Roboto";
+    src: url("../font/Roboto/Roboto-Regular.ttf");
+}
+
+* {
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    line-height: 1.4;
+}
+//DESKTOP
+@media only screen and (min-width: 959px) {
+    html {
+        .border {
+            background-color: #3c3c3c;
+            color: white;
+        }
+        main {
+            article {
+                .grid-container {
+                }
+            }
+        }
+    }
+}
+
