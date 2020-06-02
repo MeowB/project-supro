@@ -16,4 +16,31 @@ body {
 @media only screen and (min-width: 959px) {
   html .border {
     background-color: #3c3c3c;
-    color: white; } }
+    color: white; }
+  html main {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto; }
+    html main article section .grid-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;
+      gap: 5%;
+      grid-template-areas: "area distance "; }
+      html main article section .grid-container .area {
+        grid-area: area; }
+      html main article section .grid-container .distance {
+        grid-area: distance; }
+    html main article section .grid-container-2 {
+      display: grid;
+      grid-template-columns: 0.5fr 1.5fr;
+      grid-template-rows: 1fr;
+      gap: 1%;
+      grid-template-areas: "leftlist map"; }
+      html main article section .grid-container-2 .leftList {
+        grid-area: leftlist; }
+        html main article section .grid-container-2 .leftList img {
+          max-width: 50%; }
+      html main article section .grid-container-2 .map {
+        grid-area: map;
+        background-color: rebeccapurple; } }

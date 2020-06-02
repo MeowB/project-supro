@@ -15,6 +15,7 @@ body {
     font-family: "Roboto", sans-serif;
     line-height: 1.4;
 }
+
 //DESKTOP
 @media only screen and (min-width: 959px) {
     html {
@@ -23,11 +24,50 @@ body {
             color: white;
         }
         main {
+            width: 75%;
+            margin-left: auto;
+            margin-right: auto;
             article {
-                .grid-container {
+                section {
+                    .grid-container {
+                        display: grid;
+                        grid-template-columns: 1fr 1fr;
+                        grid-template-rows: 1fr;
+                        gap: 5%;
+                        grid-template-areas: "area distance ";
+
+                        .area {
+                            grid-area: area;
+                        }
+
+                        .distance {
+                            grid-area: distance;
+                        }
+                    }
+                }
+
+                section {
+                    .grid-container-2 {
+                        display: grid;
+                        grid-template-columns: 0.5fr 1.5fr;
+                        grid-template-rows: 1fr;
+                        gap: 1%;
+                        grid-template-areas: "leftlist map";
+
+                        .leftList {
+                            grid-area: leftlist;
+                            img {
+                                max-width: 50%;
+                            }
+                        }
+
+                        .map {
+                            grid-area: map;
+                            background-color: rebeccapurple;
+                        }
+                    }
                 }
             }
         }
     }
 }
-
