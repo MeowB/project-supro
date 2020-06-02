@@ -42,11 +42,13 @@ body {
 
                         .distance {
                             grid-area: distance;
+                         
                         }
                     }
                 }
 
                 section {
+                    margin-top: 2%;
                     .grid-container-2 {
                         display: grid;
                         grid-template-columns: 0.5fr 1.5fr;
@@ -56,14 +58,37 @@ body {
 
                         .leftList {
                             grid-area: leftlist;
-                            img {
-                                max-width: 50%;
+                            height: 40em;
+                            border: solid;
+                            overflow: scroll;
+                            .box {
+                                .image {
+                                    img {
+                                        max-width: 50%;
+                                     
+                                        
+                                    }
+                                }
+                                .presentation {
+                                    h2 {
+                                    }
+                                    .adress {
+                                    }
+                                    .phone {
+                                    }
+                                }
                             }
                         }
 
                         .map {
                             grid-area: map;
-                            background-color: rebeccapurple;
+                            .ImgMap{
+                                img{
+                                    max-width: 100%;
+                                }
+
+                            }
+                            
                         }
                     }
                 }

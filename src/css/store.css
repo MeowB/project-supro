@@ -31,16 +31,22 @@ body {
         grid-area: area; }
       html main article section .grid-container .distance {
         grid-area: distance; }
-    html main article section .grid-container-2 {
-      display: grid;
-      grid-template-columns: 0.5fr 1.5fr;
-      grid-template-rows: 1fr;
-      gap: 1%;
-      grid-template-areas: "leftlist map"; }
-      html main article section .grid-container-2 .leftList {
-        grid-area: leftlist; }
-        html main article section .grid-container-2 .leftList img {
-          max-width: 50%; }
-      html main article section .grid-container-2 .map {
-        grid-area: map;
-        background-color: rebeccapurple; } }
+    html main article section {
+      margin-top: 2%; }
+      html main article section .grid-container-2 {
+        display: grid;
+        grid-template-columns: 0.5fr 1.5fr;
+        grid-template-rows: 1fr;
+        gap: 1%;
+        grid-template-areas: "leftlist map"; }
+        html main article section .grid-container-2 .leftList {
+          grid-area: leftlist;
+          height: 40em;
+          border: solid;
+          overflow: scroll; }
+          html main article section .grid-container-2 .leftList .box .image img {
+            max-width: 50%; }
+        html main article section .grid-container-2 .map {
+          grid-area: map; }
+          html main article section .grid-container-2 .map .ImgMap img {
+            max-width: 100%; } }
