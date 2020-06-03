@@ -10,11 +10,11 @@
 
 <body>
     <header>
-
+        <div class="border">
+            store locator
+        </div>
     </header>
-    <div class="border">
-        store locator
-    </div>
+
 
     <main>
 
@@ -25,28 +25,30 @@
                 <div class="grid-container">
                     <form class="area">
                         <fieldset>
-                            <legend>search by area</legend>
+                            <h1>search by area</h1>
+                            <div class="columns">
+                                <label for="Country">Country</label><br />
+                                <select name="Country" id="Country">
+                                    <option>--Please Select--</option>
+                                    <option value="belgium">Belgium</option>
+                                    <option value="france">France</option>
+                                    <option value="spain">Spain</option>
+                                    <option value="italy">Italy</option>
+                                    <option value="united-kingdom">United Kingdom</option>
+                                    <option value="canada">Canada</option>
+                                    <option value="united-states">United States</option>
+                                    <option value="china">China</option>
+                                    <option value="japan">Japan</option>
+                                </select><br />
+                                <label>City</label><br />
+                                <input type="text" name="city" /><br />
+                                <label>State</label><br />
+                                <input type="text" name="state" /><br />
+                                <label>Zipcode</label><br />
+                                <input type="number" name="Zipcode"><br />
+                            </div>
 
-                            <label for="Country">Country</label><br />
-                            <select name="Country" id="Country">
-                                <option>--Please Select--</option>
-                                <option value="belgium">Belgium</option>
-                                <option value="france">France</option>
-                                <option value="spain">Spain</option>
-                                <option value="italy">Italy</option>
-                                <option value="united-kingdom">United Kingdom</option>
-                                <option value="canada">Canada</option>
-                                <option value="united-states">United States</option>
-                                <option value="china">China</option>
-                                <option value="japan">Japan</option>
-                            </select><br />
-                            <label>City</label><br />
-                            <input type="text" name="city" /><br />
-                            <label>State</label><br />
-                            <input type="text" name="state" /><br />
-                            <label>Zipcode</label><br />
-                            <input type="number" name="Zipcode"><br />
-                            <input type="submit" value="search" />
+                            <input type="submit" value="search" class="button" />
 
                         </fieldset>
                     </form>
@@ -54,12 +56,12 @@
 
                     <form class="distance">
                         <fieldset>
-                            <legend>search by distance</legend>
+                            <h1>search by distance</h1>
                             <label>Location</label><br />
                             <input type="text" name="location" /><br />
                             <label>Radius</label><br />
                             <input type="text" name="radius" /><br />
-                            <input type="submit" value="search" />
+                            <input type="submit" value="search" class="button" />
 
                         </fieldset>
                     </form>
@@ -71,74 +73,123 @@
             <section>
                 <div class="grid-container-2">
                     <div class="leftList">
-                        <!--
-                    heigth
-                    overflow
-                -->
+
 
                         <div class="box">
-                            <p class="image">
-                                <img src="src/stores/resources/2c558fd397fc98b43c893a15524037a1_1.jpeg" alt="panda"></p>
+                            <div class="columns2">
+                                <div class="image">
+                                    <img src="src/stores/resources/2c558fd397fc98b43c893a15524037a1_1.jpeg" alt="panda">
+                                </div>
 
-                            <p class="presentation">
-                            <h2>Panda</h2>
-                            <p class="adress">
-                                991 Broadway,New York,
-                                New York, Zip Code:
-                                10006, AS
-                            </p>
-                            <p class="phone">Phone 1-541-754-3010</p>
-                            <input type="submit" value="view map" />
-                            </p>
+                                <div class="presentation">
+                                    <h2>panda</h2>
+                                    <div class="adress">
+                                        991 Broadway,New York,
+                                        New York, Zip Code:
+                                        10006, AS
+                                    </div>
+                                    <div class="phone">
+                                        Phone 1-541-754-3010
+                                    </div>
+                                </div>
+
+                                <input type="submit" value="view map" />
+                            </div>
                         </div>
 
 
                         <div class="box">
-                            <p class="image">
-                                <img class="img" src="src/stores/resources/64e3011babb9cb666c04621c00230857.jpg"
-                                    alt="curabitur">
-                            </p>
-                            <p class="presentation">
-                            <h2>Curabitur</h2>
-                            <p class="adress">
-                                69 Mott St,New York,
-                                New York, Zip Code:
-                                10006, AS
-                            </p>
-                            <p class="phone">Phone 1-541-754-3010</p>
-                            <input type="submit" value="view map" /></p>
-                        </div>
-
-
-                        <div class="box">
-                            <p class="image">
-                                <img src="src/stores/resources/9423947432_175211195f_b.jpg" alt="Tandem-C">
-                            </p>
-                            <p class="presentation">
-                            <h2>Tandem-C</h2>
-                            <p class="adress">
-                                9i Broadway,New York,
-                                New York, Zip Code:
-                                10006, AS
-                            </p>
-                            </p>
-                            <p class="phone">Phone 1-541-754-3010</p>
+                            <div class="columns2">
+                                <div class="image">
+                                    <img class="img" src="src/stores/resources/64e3011babb9cb666c04621c00230857.jpg"
+                                        alt="curabitur">
+                                </div>
+                                <div class="presentation">
+                                    <h2>curabitur</h2>
+                                    <div class="adress">
+                                        69 Mott St,New York,
+                                        New York, Zip Code:
+                                        10006, AS
+                                    </div>
+                                    <div class="phone">
+                                        Phone 1-541-754-3010
+                                    </div>
+                                </div>
+                            </div>
                             <input type="submit" value="view map" />
                         </div>
 
 
+                        <div class="box">
+                            <div class="columns2">
+                                <div class="image">
+                                    <img src="src/stores/resources/9423947432_175211195f_b.jpg" alt="Tandem-C">
+                                </div>
+                                <div class="presentation">
+                                    <h2>tandem-C</h2>
+                                    <div class="adress">
+                                        9i Broadway,New York,
+                                        New York, Zip Code:
+                                        10006, AS
+                                    </div>
+                                </div>
+                                <div class="phone">
+                                    Phone 1-541-754-3010
+                                </div>
+                            </div>
+                            <input type="submit" value="view map" />
+                        </div>
 
 
                     </div>
+
                     <div class="map">
-                        <p class="ImgMap">
-<img src="src/stores/resources/kobu-agency-UD7pyCkdBg8-unsplash.jpg" alt="map">
-                        </p>
+                        <div class="ImgMap">
+                            <img src="src/stores/resources/kobu-agency-UD7pyCkdBg8-unsplash.jpg" alt="map">
+                        </div>
                     </div>
-
 
                 </div>
 
+
+            </section>
+            <section>
+                <div class="footer">
+
+                    <div class="columns3">
+                        <div class="left">
+                            <ul>
+                                <li>facebook</li>
+                                <li>twitter</li>
+                                <li>google</li>
+                                <li>youtube</li>
+                                <li>instagram</li>
+                            </ul>
+                        </div>
+        
+                        <div class="right">
+                            <ul>
+                                <li>
+                                    <img src="src/stores/resources/payment1.png" alt="payment1">
+                                </li>
+                                <li>
+                                    <img src="src/stores/resources/payment2.png" alt="payment2">
+                                </li>
+                                <li>
+                                    <img src="src/stores/resources/payment3.png" alt="payment3">
+                                </li>
+                                <li>
+                                    <img src="src/stores/resources/payment4.png" alt="payment4">
+                                </li>
+                                <li>
+                                    <img src="src/stores/resources/payment5.png" alt="payment5">
+                                </li>
+        
+                            </ul>
+        
+                        </div>
+                    </div>
+                </div>
             </section>
 
         </article>
@@ -146,7 +197,6 @@
     </main>
 
     <footer>
-
     </footer>
 </body>
 

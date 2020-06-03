@@ -1,3 +1,5 @@
+$h1: uppercase;
+$columns: 2;
 @font-face {
     font-family: "Roboto";
     src: url("../font/Roboto/Roboto-Regular.ttf");
@@ -22,6 +24,15 @@ body {
         .border {
             background-color: #3c3c3c;
             color: white;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            height: 70px;
+            text-transform: capitalize;
+            line-height: 70px;
+            font-size: 1.5em;
+            margin-bottom: 5%;
         }
         main {
             width: 75%;
@@ -35,14 +46,33 @@ body {
                         grid-template-rows: 1fr;
                         gap: 5%;
                         grid-template-areas: "area distance ";
+                        .button {
+                            background-color: black;
+                            color: white;
+                            text-transform: uppercase;
+                            width: 150px;
+                            height: 30px;
+                            margin-top: 3%;
+                        }
 
                         .area {
-                            grid-area: area;
+                            fieldset {
+                                h1 {
+                                    text-transform: $h1;
+                                }
+                                .columns {
+                                    columns: $columns;
+                                }
+                            }
                         }
 
                         .distance {
                             grid-area: distance;
-                         
+                            fieldset {
+                                h1 {
+                                    text-transform: $h1;
+                                }
+                            }
                         }
                     }
                 }
@@ -62,15 +92,16 @@ body {
                             border: solid;
                             overflow: scroll;
                             .box {
-                                .image {
-                                    img {
-                                        max-width: 50%;
-                                     
-                                        
+                                .columns2 {
+                                    .image {
+                                        img {
+                                            max-width: 50%;
+                                        }
                                     }
-                                }
-                                .presentation {
+                                    .presentation {
+                                    }
                                     h2 {
+                                        text-transform: capitalize;
                                     }
                                     .adress {
                                     }
@@ -82,13 +113,33 @@ body {
 
                         .map {
                             grid-area: map;
-                            .ImgMap{
-                                img{
+                            .ImgMap {
+                                img {
                                     max-width: 100%;
                                 }
-
                             }
-                            
+                        }
+                    }
+                }
+            }
+
+            .footer {
+                columns: $columns;
+
+                .left {
+                    ul {
+                        li {
+                            display: inline;
+                            margin: 5px;
+                        }
+                    }
+                }
+                .right {
+                    ul {
+                        
+                        li {
+                            display: inline;
+                            margin: 5px;
                         }
                     }
                 }
