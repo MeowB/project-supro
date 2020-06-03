@@ -51,7 +51,7 @@ body {
                             color: white;
                             text-transform: uppercase;
                             width: 150px;
-                            height: 30px;
+                            height: 55px;
                             margin-top: 3%;
                         }
 
@@ -88,24 +88,38 @@ body {
 
                         .leftList {
                             grid-area: leftlist;
-                            height: 40em;
+                            height: 30em;
                             border: solid;
                             overflow: scroll;
                             .box {
                                 .columns2 {
+                                    display: grid;
+                                    grid-template-columns: 1fr 1fr;
+                                    grid-template-rows: 1fr;
+                                    gap: 5%;
+                                    grid-template-areas: "image presentation ";
                                     .image {
+                                        grid-area: image;
                                         img {
                                             max-width: 50%;
                                         }
                                     }
                                     .presentation {
-                                    }
-                                    h2 {
-                                        text-transform: capitalize;
-                                    }
-                                    .adress {
-                                    }
-                                    .phone {
+                                        grid-area: presentation;
+                                        h2 {
+                                            text-transform: capitalize;
+                                        }
+                                        .adress {
+                                        }
+                                        .phone {
+                                        }
+                                        .view-map{
+                                            background-color: black;
+                                            color:white;
+                                            text-transform: uppercase;
+                                            height: 50px;
+                                            width: 100px;
+                                        }
                                     }
                                 }
                             }
@@ -131,12 +145,12 @@ body {
                         li {
                             display: inline;
                             margin: 5px;
+                            text-transform: uppercase;
                         }
                     }
                 }
                 .right {
                     ul {
-                        
                         li {
                             display: inline;
                             margin: 5px;

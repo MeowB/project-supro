@@ -41,7 +41,7 @@ body {
         color: white;
         text-transform: uppercase;
         width: 150px;
-        height: 30px;
+        height: 55px;
         margin-top: 3%; }
       html main article section .grid-container .area fieldset h1 {
         text-transform: uppercase; }
@@ -61,13 +61,29 @@ body {
         grid-template-areas: "leftlist map"; }
         html main article section .grid-container-2 .leftList {
           grid-area: leftlist;
-          height: 40em;
+          height: 30em;
           border: solid;
           overflow: scroll; }
-          html main article section .grid-container-2 .leftList .box .columns2 .image img {
-            max-width: 50%; }
-          html main article section .grid-container-2 .leftList .box .columns2 h2 {
-            text-transform: capitalize; }
+          html main article section .grid-container-2 .leftList .box .columns2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+            gap: 5%;
+            grid-template-areas: "image presentation "; }
+            html main article section .grid-container-2 .leftList .box .columns2 .image {
+              grid-area: image; }
+              html main article section .grid-container-2 .leftList .box .columns2 .image img {
+                max-width: 50%; }
+            html main article section .grid-container-2 .leftList .box .columns2 .presentation {
+              grid-area: presentation; }
+              html main article section .grid-container-2 .leftList .box .columns2 .presentation h2 {
+                text-transform: capitalize; }
+              html main article section .grid-container-2 .leftList .box .columns2 .presentation .view-map {
+                background-color: black;
+                color: white;
+                text-transform: uppercase;
+                height: 50px;
+                width: 100px; }
         html main article section .grid-container-2 .map {
           grid-area: map; }
           html main article section .grid-container-2 .map .ImgMap img {
@@ -76,7 +92,8 @@ body {
       columns: 2; }
       html main .footer .left ul li {
         display: inline;
-        margin: 5px; }
+        margin: 5px;
+        text-transform: uppercase; }
       html main .footer .right ul li {
         display: inline;
         margin: 5px; } }
