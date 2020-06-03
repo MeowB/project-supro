@@ -81,7 +81,152 @@ body {
                     margin-top: 2%;
                     .grid-container-2 {
                         display: grid;
-                        grid-template-columns: 0.5fr 1.5fr;
+                        grid-template-columns: 0.6fr 1.4fr;
+                        grid-template-rows: 1fr;
+                        gap: 1%;
+                        grid-template-areas: "leftlist map";
+
+                        .leftList {
+                            grid-area: leftlist;
+                            height: 30em;
+                            border: solid;
+                            overflow: scroll;
+                            .box {
+                                .columns2 {
+                                    display: grid;
+                                    grid-template-columns: 1fr 1fr;
+                                    grid-template-rows: 1fr;
+                                    gap: 1%;
+                                    grid-template-areas: "image presentation ";
+                                    .image {
+                                        grid-area: image;
+                                        img {
+                                            max-width: 100%;
+                                        }
+                                    }
+                                    .presentation {
+                                        grid-area: presentation;
+                                        h2 {
+                                            text-transform: capitalize;
+                                        }
+                                        .adress {
+                                        }
+                                        .phone {
+                                        }
+                                        .view-map {
+                                            background-color: black;
+                                            color: white;
+                                            text-transform: uppercase;
+                                            height: 50px;
+                                            width: 100px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .map {
+                            grid-area: map;
+                            .ImgMap {
+                                img {
+                                    max-width: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .footer {
+                columns: $columns;
+
+                .left {
+                    ul {
+                        li {
+                            display: inline;
+                            margin: 5px;
+                            text-transform: uppercase;
+                        }
+                    }
+                }
+                .right {
+                    ul {
+                        li {
+                            display: inline;
+                            margin: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+//TABLET
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+    html {
+        .border {
+            background-color: #3c3c3c;
+            color: white;
+            width: 760px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            height: 70px;
+            text-transform: capitalize;
+            line-height: 70px;
+            font-size: 1.5em;
+            margin-bottom: 5%;
+        }
+        main {
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            article {
+                section {
+                    .grid-container {
+                        display: grid;
+                        grid-template-columns: 1fr 1fr;
+                        grid-template-rows: 1fr;
+                        gap: 1%;
+                        grid-template-areas: "area distance ";
+                        .button {
+                            background-color: black;
+                            color: white;
+                            text-transform: uppercase;
+                            width: 150px;
+                            height: 55px;
+                            margin-top: 3%;
+                        }
+
+                        .area {
+                            fieldset {
+                                h1 {
+                                    text-transform: $h1;
+                                }
+                                .columns {
+                                    columns: $columns;
+                                }
+                            }
+                        }
+
+                        .distance {
+                            grid-area: distance;
+                            fieldset {
+                                h1 {
+                                    text-transform: $h1;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                section {
+                    margin-top: 2%;
+                    .grid-container-2 {
+                        display: grid;
+                      
                         grid-template-rows: 1fr;
                         gap: 1%;
                         grid-template-areas: "leftlist map";
@@ -101,7 +246,7 @@ body {
                                     .image {
                                         grid-area: image;
                                         img {
-                                            max-width: 50%;
+                                            max-width: 100%;
                                         }
                                     }
                                     .presentation {
@@ -113,9 +258,9 @@ body {
                                         }
                                         .phone {
                                         }
-                                        .view-map{
+                                        .view-map {
                                             background-color: black;
-                                            color:white;
+                                            color: white;
                                             text-transform: uppercase;
                                             height: 50px;
                                             width: 100px;
@@ -128,6 +273,145 @@ body {
                         .map {
                             grid-area: map;
                             .ImgMap {
+                                img {
+                                    max-width: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .footer {
+                columns: $columns;
+
+                .left {
+                    ul {
+                        li {
+                            display: inline;
+                            margin: 5px;
+                            text-transform: uppercase;
+                        }
+                    }
+                }
+                .right {
+                    ul {
+                        li {
+                            display: inline;
+                            margin: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+//MOBILE
+@media only screen and (max-device-width: 767px) {
+    html {
+        .border {
+            background-color: #3c3c3c;
+            color: white;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            height: 70px;
+            text-transform: capitalize;
+            line-height: 70px;
+            font-size: 1.5em;
+            margin-bottom: 5%;
+        }
+        main {
+            width: 75%;
+            margin-left: auto;
+            margin-right: auto;
+            article {
+                section {
+                    .grid-container {
+                        .button {
+                            background-color: black;
+                            color: white;
+                            text-transform: uppercase;
+                            width: 110px;
+                            height: 55px;
+                            margin-top: 3%;
+                        }
+
+                        .area {
+              
+                            fieldset {
+                                h1 {
+                                    text-transform: $h1;
+                                }
+                                .columns {
+                                    
+                                }
+                            }
+                        }
+
+                        .distance {
+                         margin-top: 2%;
+                            fieldset {
+                                h1 {
+                                    text-transform: $h1;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                section {
+                    margin-top: 2%;
+                    .grid-container-2 {
+          
+
+                        .leftList {
+                            grid-area: leftlist;
+                            height: 30em;
+                            border: solid;
+                            overflow: scroll;
+                            .box {
+                                .columns2 {
+                                    display: grid;
+                                    grid-template-columns: 1fr 1fr;
+                                    grid-template-rows: 1fr;
+                                    gap: 1%;
+                                    grid-template-areas: "image presentation ";
+                                    .image {
+                                        grid-area: image;
+                                        img {
+                                            max-width: 100%;
+                                        }
+                                    }
+                                    .presentation {
+                                        grid-area: presentation;
+                                        h2 {
+                                            text-transform: capitalize;
+                                        }
+                                        .adress {
+                                        }
+                                        .phone {
+                                        }
+                                        .view-map {
+                                            background-color: black;
+                                            color: white;
+                                            text-transform: uppercase;
+                                            height: 50px;
+                                            width: 100px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .map {
+                            grid-area: map;
+                            .ImgMap {
+                                margin-top: 2%;
                                 img {
                                     max-width: 100%;
                                 }
