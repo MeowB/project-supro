@@ -1,4 +1,11 @@
 
+@media screen and (max-width: 800px){
+  .main, .footer {
+    padding: 0 7.5%;
+  }
+}
+
+
 .header{
     
   @media screen and (max-width: 800px){
@@ -31,3 +38,4 @@
 .reverse{
   transform: rotateZ(90deg);
 }
+

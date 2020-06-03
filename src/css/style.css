@@ -19,6 +19,7 @@ html p {
 
 main {
   min-height: 100%;
+  width: 100%;
 }
 
 body {
@@ -127,7 +128,7 @@ a {
 }
 
 .header__icon {
-  z-index: 11;
+  z-index: 12;
   /*Hamburger Background*/
 }
 .header__icon--menuwrap {
@@ -261,7 +262,6 @@ a {
 .footer {
   z-index: 1;
   position: inherit;
-  width: 100%;
   bottom: 0;
   height: 300px;
   justify-content: center;
@@ -373,26 +373,8 @@ a {
 }
 .main__banner {
   position: relative;
-  width: 85%;
   background-color: #F2EDE9;
   margin: auto;
-}
-.main__banner__bottom--container {
-  background-image: url(../homepage/resources/deals_image.jpg);
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  text-align: left;
-  height: 450px;
-}
-.main__banner__bottom--container--wrapper {
-  width: 350px;
-  margin: auto;
-  width: 90%;
-}
-.main__banner__bottom--container--wrapper > a {
-  position: absolute;
-  bottom: 12%;
 }
 .main__banner__top--container {
   background-image: url(../homepage/resources/abc.jpg);
@@ -405,7 +387,7 @@ a {
   text-align: left;
   height: 100vh;
 }
-.main__banner__top--container .icon {
+.main__banner__top--container .topicon {
   position: absolute;
   margin: auto;
   height: 80px;
@@ -414,11 +396,11 @@ a {
   width: 100%;
   text-align: center;
 }
-.main__banner__top--container .icon ul > li {
+.main__banner__top--container .topicon ul > li {
   display: inline;
   margin: 0 10px;
 }
-.main__banner__top--container .icon a {
+.main__banner__top--container .topicon a {
   color: #999;
 }
 .main__banner__top--container--wrapper {
@@ -428,6 +410,123 @@ a {
 .main__banner__top--container--wrapper > p {
   color: #f3beb5;
   font-size: 130%;
+}
+.main__banner__secondary {
+  height: 60vh;
+  width: 100%;
+}
+.main__banner__secondary > div {
+  height: 20vh;
+  margin: 0 0;
+  font-size: 80%;
+}
+.main__banner__secondary > div > div {
+  padding: 5px 5vw;
+}
+.main__banner__secondary > div h2 {
+  margin-bottom: 5px;
+  font-size: 180%;
+}
+.main__banner__secondary--container--left {
+  background-image: url(../homepage/resources/banner_h1_1.jpg);
+  background-color: gold;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 33vh;
+}
+.main__banner__secondary--container--white {
+  background-image: url(../homepage/resources/banner_h1_2.jpg);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+.main__banner__secondary--container--white *, .main__banner__secondary--container--white a, .main__banner__secondary--container--white p {
+  color: #fff;
+  margin: 0px 0px;
+}
+.main__banner__secondary--container--white a, .main__banner__secondary--container--white h2 {
+  margin: 0 0;
+}
+.main__banner__secondary--container--white p {
+  font-size: 80%;
+}
+.main__banner__secondary--container--right {
+  background-image: url(../homepage/resources/banner_h1_3.jpg);
+  background-size: cover;
+  height: 100%;
+  text-align: right;
+}
+.main__banner__secondary--container--right h2, .main__banner__secondary--container--right p, .main__banner__secondary--container--right a {
+  margin: 0;
+}
+@media screen and (min-width: 800px) {
+  .main__banner__secondary > div {
+    height: 300px;
+  }
+  .main__banner__secondary--container--left {
+    background-image: url(../homepage/resources/banner_h1_1.jpg);
+    background-size: cover;
+    background-position: right;
+    width: 33.33%;
+    float: left;
+    height: 100%;
+  }
+  .main__banner__secondary--container--left * p, .main__banner__secondary--container--left h2 {
+    margin: 1em 0;
+    margin-top: 60px;
+  }
+  .main__banner__secondary--container--white {
+    background-image: url(../homepage/resources/banner_h1_2.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 33.33%;
+    float: left;
+    text-align: center;
+    height: 100%;
+  }
+  .main__banner__secondary--container--white *, .main__banner__secondary--container--white a, .main__banner__secondary--container--white p {
+    color: #fff;
+    margin: 0px 0px;
+  }
+  .main__banner__secondary--container--white a, .main__banner__secondary--container--white h2 {
+    margin: 1em 0;
+  }
+  .main__banner__secondary--container--white p {
+    margin-top: 60px;
+    font-size: 80%;
+  }
+  .main__banner__secondary--container--right {
+    background-image: url(../homepage/resources/banner_h1_3.jpg);
+    background-size: cover;
+    width: 33.33%;
+    float: right;
+    height: 100%;
+    text-align: right;
+  }
+  .main__banner__secondary--container--right * {
+    margin: 0px 0px;
+    margin-left: 18vw;
+  }
+}
+.main__banner__bottom--container {
+  background-image: url(../homepage/resources/deals_image.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  text-align: left;
+  height: 450px;
+  display: inherit;
+  padding-top: 50px;
+}
+.main__banner__bottom--container--wrapper {
+  width: 350px;
+  margin: auto;
+  width: 90%;
+}
+.main__banner__bottom--container--wrapper > a {
+  position: absolute;
+  bottom: 12%;
 }
 
 .counter {
@@ -459,13 +558,150 @@ a {
   }
   .main__banner__bottom--container--wrapper {
     margin-left: 20%;
+    width: 500px;
   }
   .main__banner__top--container {
-    background-size: cover;
+    background-size: 110%;
+    background-position-x: 50px;
+    background-position-y: center;
+    height: 90vh;
+  }
+  .main__banner__top--container .topicon {
+    position: absolute;
+    width: 50px;
+    left: 0;
+    top: 0;
+    border: none;
+  }
+  .main__banner__top--container .topicon > ul > li {
+    display: block;
+    text-align: left;
+    height: 100%;
+    margin: 5px 0;
+  }
+  .main__banner__top--container--wrapper {
+    padding-top: 20vh;
+    margin-left: 60%;
+    height: 600px;
+    width: 300px;
+  }
+  .main__banner__top--container--wrapper > p {
+    margin: 0;
+    font-size: 90%;
+  }
+  .main__banner__top--container--wrapper > h1 {
+    font-size: 5.5em;
+    line-height: 1.1em;
+    margin: 20px 0;
+    letter-spacing: 0.1em;
   }
 
   .counter {
     margin: 0;
+  }
+}
+.main__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 40%);
+  grid-template-rows: repeat(3, 270px);
+  grid-gap: 20px;
+  grid-column-gap: 20px;
+  grid-row-gap: 4em;
+  width: 100%;
+  justify-content: center;
+  margin: 50px 0;
+  padding-bottom: 20%;
+  position: relative;
+  top: 0;
+  margin-bottom: 50px;
+}
+.main__grid > div {
+  width: 100%;
+}
+.main__grid > div img {
+  height: auto;
+  width: 100%;
+}
+.main__grid .div1 {
+  grid-area: 1/2/1/1;
+}
+.main__grid .div2 {
+  grid-area: 1/2/1/0;
+}
+.main__grid .div3 {
+  grid-area: 1/2/1/2;
+}
+.main__grid .div4 {
+  grid-area: 2/3/2/0;
+}
+.main__grid .div5 {
+  grid-area: 2/3/2/0;
+}
+.main__grid .div6 {
+  grid-area: 2/3/2/0;
+}
+.main .size-choice {
+  width: 12px;
+  height: auto;
+  display: inline-block;
+  padding-right: 2px;
+  border-radius: 6px;
+  background-color: #b6b6b6;
+}
+.main > div .color-choice {
+  width: 12px;
+  height: auto;
+  padding-right: 2px;
+  border-radius: 50%;
+}
+.main > div .star {
+  width: 100%;
+  height: 13px;
+  width: 12px;
+  height: auto;
+  display: inline-block;
+}
+@media screen and (min-width: 800px) {
+  .main__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 20%);
+    grid-template-rows: auto;
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+    width: 99%;
+    justify-content: center;
+    margin-bottom: 0;
+  }
+  .main__grid > div {
+    width: 50%;
+  }
+  .main__grid > div img {
+    height: auto;
+    width: 200%;
+  }
+  .main__grid .div1 {
+    grid-area: 1/1/2/2;
+  }
+  .main__grid .div2 {
+    grid-area: 1/2/2/3;
+  }
+  .main__grid .div3 {
+    grid-area: 1/3/2/4;
+  }
+  .main__grid .div4 {
+    grid-area: 2/1/3/2;
+  }
+  .main__grid .div5 {
+    grid-area: 2/2/3/3;
+  }
+  .main__grid .div6 {
+    grid-area: 2/3/3/4;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .main, .footer {
+    padding: 0 7.5%;
   }
 }
 @media screen and (max-width: 800px) {
