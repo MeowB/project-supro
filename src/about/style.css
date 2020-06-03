@@ -143,8 +143,10 @@ nav {
   padding-right: 20px;
 }
 .member {
-  width: 33%;
+  width: 29%;
   padding-bottom: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .section5 {
   padding-right: 20%;
@@ -157,10 +159,12 @@ nav {
 }
 .section8 {
   padding-right: 20%;
+  background-color: whitesmoke;
 }
 .brand {
-  width: 14%;
-  padding: 0px 10px 100px 10px;
+  width: 12%;
+  padding: 100px 20px 100px 20px;
+  background-color: white;
 }
 .section-title {
   padding-bottom: 50px;

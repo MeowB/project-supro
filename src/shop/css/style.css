@@ -140,7 +140,7 @@ h1 h2 h3 {
   padding-bottom: 10px;
 }
 .aside {
-  float: left;
+  
   padding: none;
   margin: none;
   padding-left: 1%;
@@ -184,7 +184,6 @@ h1 h2 h3 {
   }
   .aside {
     font-size: xx-small;
-    float: left;
     padding: 0%;
   }
   .compare {
