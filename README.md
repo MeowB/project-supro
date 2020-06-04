@@ -1,5 +1,16 @@
 # project-supro
 THE PAGE IS NOW ONLINE [HERE](https://meowb.github.io/project-supro/index.html)
+
+Made with love by :
+*[Scott Borlon](https://github.com/MeowB)
+*[Mehdi Semlali](https://github.com/MeowB)
+*[Arthur Pluymers](https://github.com/Buchos)
+
+This was an exercice for BeCode, the goal was to use what we learned about HTML/CSS/SASS to design 5 pages of a webshop with a picture of the given goal to achieve.
+The pages had to be responsive for desktop, tablet and mobile.
+This was made in our 3rd week at becode in late may/early june
+
+
 ## bugs:
 * ~~hamburger hitbox~~
 Solution: adding  "pointer-events: none;" on everything getting above the toggler checkbox ( class: "header__icon--menuwrap--hamburger")
