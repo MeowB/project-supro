@@ -1,6 +1,13 @@
 
 .main{
 
+  .newArrival{
+    padding-left: 9%;
+    ul > li {
+      display: inline;
+    }
+  }
+
 
   &__grid {
     display: grid;
@@ -16,11 +23,6 @@
     position: relative;
     top: 0;
     margin-bottom: 50px;
-      
-
-    &--wrapper {
-      
-    }
 
     > div{
       width:100%;
@@ -82,6 +84,26 @@
 
 
   @media screen and (min-width: 800px) {
+
+    .newArrival{
+      padding: 0;
+      width: 65%;
+      margin: auto;
+
+      ul {
+        float: right;
+        li:first-child{
+          color: #000;
+          font-weight: 600;
+        }
+      }
+
+      ul > li {
+        display: inline;
+        color: #999;
+        font-size: 80%;
+      }
+    }
 
     &__grid{
       display: grid;

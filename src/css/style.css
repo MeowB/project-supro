@@ -8,6 +8,11 @@
   vertical-align: baseline;
 }
 
+.clear {
+  clear: both;
+  margin-bottom: 50px;
+}
+
 #bannerb {
   width: 100%;
 }
@@ -604,6 +609,12 @@ a {
     margin: 0;
   }
 }
+.main .newArrival {
+  padding-left: 9%;
+}
+.main .newArrival ul > li {
+  display: inline;
+}
 .main__grid {
   display: grid;
   grid-template-columns: repeat(2, 40%);
@@ -666,6 +677,23 @@ a {
   display: inline-block;
 }
 @media screen and (min-width: 800px) {
+  .main .newArrival {
+    padding: 0;
+    width: 65%;
+    margin: auto;
+  }
+  .main .newArrival ul {
+    float: right;
+  }
+  .main .newArrival ul li:first-child {
+    color: #000;
+    font-weight: 600;
+  }
+  .main .newArrival ul > li {
+    display: inline;
+    color: #999;
+    font-size: 80%;
+  }
   .main__grid {
     display: grid;
     grid-template-columns: repeat(3, 20%);
@@ -756,6 +784,46 @@ form button {
   }
   #newsletter input {
     align-self: auto;
+  }
+}
+.news {
+  margin: auto;
+  width: 80%;
+  clear: both;
+}
+
+@media screen and (min-width: 800px) {
+  .news {
+    margin: auto;
+    width: 70%;
+  }
+  .news .latestNews {
+    width: 70%;
+  }
+  .news .left {
+    float: left;
+  }
+  .news .right {
+    float: right;
+  }
+  .news .center {
+    float: left;
+  }
+  .news__article {
+    margin: 0 2%;
+    width: 29%;
+    display: block;
+    height: 370px;
+  }
+  .news__article > div {
+    width: 100%;
+  }
+  .news__article > div b {
+    text-align: justify;
+  }
+  .news__article img {
+    height: auto;
+    width: 100%;
   }
 }
 @media screen and (max-width: 800px) {

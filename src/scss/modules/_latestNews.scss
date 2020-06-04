@@ -1,0 +1,51 @@
+
+  .news{
+    margin: auto;
+    width: 80%;
+    clear: both;
+  }
+@media screen and (min-width: 800px){
+    .news{
+        margin: auto;
+        width: 70%;
+    
+        .latestNews{
+            width: 70%;
+        }
+    
+    
+        .left {
+            float: left;
+        }
+    
+        .right {
+            float: right;
+        }
+    
+        .center {
+            float: left;
+        }
+    
+        &__article{
+            
+            margin: 0 2%;
+            width: 29%;
+            display: block;
+            height: 370px;
+    
+            > div {
+                width: 100%;
+    
+                b {
+                    text-align: justify;
+                }
+            }
+    
+            img {
+                height: auto;
+                width: 100%;
+            }
+    
+        }
+    }
+}
