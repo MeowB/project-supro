@@ -132,10 +132,8 @@ body {
         text-transform: uppercase; }
       html main article section .grid-container .area fieldset .columns {
         columns: 2; }
-      html main article section .grid-container .distance {
-        grid-area: distance; }
-        html main article section .grid-container .distance fieldset h1 {
-          text-transform: uppercase; }
+      html main article section .grid-container .distance fieldset h1 {
+        text-transform: uppercase; }
     html main article section {
       margin-top: 2%; }
       html main article section .grid-container-2 {
@@ -216,7 +214,7 @@ body {
       margin-top: 2%; }
       html main article section .grid-container-2 .leftList {
         grid-area: leftlist;
-        height: 30em;
+        height: 20em;
         border: solid;
         overflow: scroll; }
         html main article section .grid-container-2 .leftList .box .columns2 {

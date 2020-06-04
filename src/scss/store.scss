@@ -162,7 +162,6 @@ body {
     }
 }
 
-
 //TABLET
 @media only screen and (min-width: 768px) and (max-width: 959px) {
     html {
@@ -212,7 +211,6 @@ body {
                         }
 
                         .distance {
-                            grid-area: distance;
                             fieldset {
                                 h1 {
                                     text-transform: $h1;
@@ -226,7 +224,7 @@ body {
                     margin-top: 2%;
                     .grid-container-2 {
                         display: grid;
-                      
+
                         grid-template-rows: 1fr;
                         gap: 1%;
                         grid-template-areas: "leftlist map";
@@ -307,8 +305,6 @@ body {
     }
 }
 
-
-
 //MOBILE
 @media only screen and (max-device-width: 767px) {
     html {
@@ -342,19 +338,17 @@ body {
                         }
 
                         .area {
-              
                             fieldset {
                                 h1 {
                                     text-transform: $h1;
                                 }
                                 .columns {
-                                    
                                 }
                             }
                         }
 
                         .distance {
-                         margin-top: 2%;
+                            margin-top: 2%;
                             fieldset {
                                 h1 {
                                     text-transform: $h1;
@@ -367,11 +361,9 @@ body {
                 section {
                     margin-top: 2%;
                     .grid-container-2 {
-          
-
                         .leftList {
                             grid-area: leftlist;
-                            height: 30em;
+                            height: 20em;
                             border: solid;
                             overflow: scroll;
                             .box {
@@ -385,8 +377,6 @@ body {
                                         grid-area: image;
                                         img {
                                             max-width: 100%;
-                                            
-
                                         }
                                     }
                                     .presentation {

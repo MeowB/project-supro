@@ -104,6 +104,8 @@ body {
         display: inline-block;
         vertical-align: middle;
         font-size: 12px; }
+      html main article section .grid-container .review .buying .cart input .number {
+        width: 5%; }
       html main article section .grid-container .review .buying .cart .add {
         background-color: black;
         color: white;
@@ -112,10 +114,23 @@ body {
         background-color: white;
         color: black; }
       html main article section .grid-container .review .buying .buy button {
-        width: 100px;
+        width: 300px;
+        height: 40px;
         background-color: black;
         color: white;
         text-transform: uppercase; }
+      html main article section .grid-container .review .buying .category p {
+        text-transform: uppercase; }
+        html main article section .grid-container .review .buying .category p span {
+          text-decoration: none;
+          color: grey;
+          text-transform: none; }
+      html main article section .grid-container .review .buying .tags p {
+        text-transform: uppercase; }
+        html main article section .grid-container .review .buying .tags p span {
+          text-decoration: none;
+          color: grey;
+          text-transform: none; }
       html main article section .grid-container .review .media-icons ul li {
         display: inline;
         list-style: none;
@@ -174,6 +189,12 @@ body {
     width: 70%;
     margin-left: auto;
     margin-right: auto; }
+    html main article section .home {
+      margin-top: 2%;
+      margin-bottom: 5%;
+      text-transform: capitalize; }
+      html main article section .home span {
+        color: gray; }
     html main article section .grid-container {
       display: grid;
       align-content: space-evenly;
@@ -267,6 +288,18 @@ body {
         color: white;
         text-transform: uppercase;
         text-align: center; }
+      html main article section .grid-container .review .buying .category p {
+        text-transform: uppercase; }
+        html main article section .grid-container .review .buying .category p span {
+          text-decoration: none;
+          color: grey;
+          text-transform: none; }
+      html main article section .grid-container .review .buying .tags p {
+        text-transform: uppercase; }
+        html main article section .grid-container .review .buying .tags p span {
+          text-decoration: none;
+          color: grey;
+          text-transform: none; }
       html main article section .grid-container .review .media-icons ul li {
         display: inline;
         list-style: none;
@@ -309,7 +342,7 @@ body {
       align-content: space-evenly;
       grid-template-columns: auto auto; }
       html main article section .grid-container-3 figure img {
-        max-width: 50%; }
+        width: 50%; }
       html main article section .grid-container-3 figure figcaption p span {
         text-decoration: line-through; }
     html main article section .grid-container-4 {
@@ -326,6 +359,12 @@ body {
     width: 90%;
     margin-left: auto;
     margin-right: auto; }
+    html main article section .home {
+      margin-top: 2%;
+      margin-bottom: 5%;
+      text-transform: capitalize; }
+      html main article section .home span {
+        color: gray; }
     html main article section .grid-container {
       display: grid;
       align-content: space-evenly;
@@ -414,10 +453,23 @@ body {
         background-color: white;
         color: black; }
       html main article section .grid-container .review .buying .buy button {
-        width: 100px;
+        width: 120px;
         background-color: black;
         color: white;
+        text-transform: uppercase;
+        text-align: center; }
+      html main article section .grid-container .review .buying .category p {
         text-transform: uppercase; }
+        html main article section .grid-container .review .buying .category p span {
+          text-decoration: none;
+          color: grey;
+          text-transform: none; }
+      html main article section .grid-container .review .buying .tags p {
+        text-transform: uppercase; }
+        html main article section .grid-container .review .buying .tags p span {
+          text-decoration: none;
+          color: grey;
+          text-transform: none; }
       html main article section .grid-container .review .media-icons ul li {
         display: inline;
         list-style: none;
@@ -460,7 +512,7 @@ body {
       align-content: space-evenly;
       grid-template-columns: auto; }
       html main article section .grid-container-3 figure img {
-        max-width: 90%; }
+        width: 90%; }
       html main article section .grid-container-3 figure figcaption p span {
         text-decoration: line-through; }
     html main article section .grid-container-4 {

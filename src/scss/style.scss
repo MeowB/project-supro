@@ -35,12 +35,12 @@ body {
 
             article {
                 section {
-                    .home{
+                    .home {
                         margin-top: 2%;
                         margin-bottom: 5%;
                         text-transform: capitalize;
-                        span{
-                            color:gray;
+                        span {
+                            color: gray;
                         }
                     }
                     .grid-container {
@@ -155,12 +155,10 @@ body {
                             }
                             .buying {
                                 .cart {
-                                    input{
-                                        .number{
-
-                                        width: 5%;
-                                    }
-
+                                    input {
+                                        .number {
+                                            width: 5%;
+                                        }
                                     }
                                     .add {
                                         background-color: black;
@@ -176,10 +174,33 @@ body {
                                 }
                                 .buy {
                                     button {
-                                        width: 100px;
+                                        width: 300px;
+                                        height: 40px;
                                         background-color: black;
                                         color: white;
                                         text-transform: uppercase;
+                                    }
+                                }
+
+                                .category {
+                                    p {
+                                        text-transform: uppercase;
+                                        span {
+                                            text-decoration: none;
+                                            color: grey;
+                                            text-transform: none;
+                                        }
+                                    }
+                                }
+
+                                .tags {
+                                    p {
+                                        text-transform: uppercase;
+                                        span {
+                                            text-decoration: none;
+                                            color: grey;
+                                            text-transform: none;
+                                        }
                                     }
                                 }
                             }
@@ -305,8 +326,6 @@ body {
         }
     }
 }
-
-//TABLET
 @media only screen and (min-width: 768px) and (max-width: 959px) {
     html {
         main {
@@ -316,13 +335,14 @@ body {
 
             article {
                 section {
-                    .home{
+                    .home {
                         margin-top: 2%;
                         margin-bottom: 5%;
                         text-transform: capitalize;
-                        span{
-                            color:gray;
+                        span {
+                            color: gray;
                         }
+                    }
                     .grid-container {
                         display: grid;
                         align-content: space-evenly;
@@ -456,6 +476,28 @@ body {
                                         text-align: center;
                                     }
                                 }
+
+                                .category {
+                                    p {
+                                        text-transform: uppercase;
+                                        span {
+                                            text-decoration: none;
+                                            color: grey;
+                                            text-transform: none;
+                                        }
+                                    }
+                                }
+
+                                .tags {
+                                    p {
+                                        text-transform: uppercase;
+                                        span {
+                                            text-decoration: none;
+                                            color: grey;
+                                            text-transform: none;
+                                        }
+                                    }
+                                }
                             }
                             .media-icons {
                                 ul {
@@ -543,7 +585,7 @@ body {
 
                         figure {
                             img {
-                                max-width: 50%;
+                                width: 50%;
                             }
                             figcaption {
                                 p {
@@ -581,8 +623,10 @@ body {
     }
 }
 
-//MOBILE
+
+
 @media only screen and (max-device-width: 767px) {
+
     html {
         main {
             width: 90%;
@@ -591,13 +635,14 @@ body {
 
             article {
                 section {
-                    .home{
+                    .home {
                         margin-top: 2%;
                         margin-bottom: 5%;
                         text-transform: capitalize;
-                        span{
-                            color:gray;
+                        span {
+                            color: gray;
                         }
+                    }
                     .grid-container {
                         display: grid;
                         align-content: space-evenly;
@@ -724,10 +769,33 @@ body {
                                 }
                                 .buy {
                                     button {
-                                        width: 100px;
+                                        width: 120px;
                                         background-color: black;
                                         color: white;
                                         text-transform: uppercase;
+                                        text-align: center;
+                                    }
+                                }
+
+                                .category {
+                                    p {
+                                        text-transform: uppercase;
+                                        span {
+                                            text-decoration: none;
+                                            color: grey;
+                                            text-transform: none;
+                                        }
+                                    }
+                                }
+
+                                .tags {
+                                    p {
+                                        text-transform: uppercase;
+                                        span {
+                                            text-decoration: none;
+                                            color: grey;
+                                            text-transform: none;
+                                        }
                                     }
                                 }
                             }
@@ -817,7 +885,7 @@ body {
 
                         figure {
                             img {
-                                max-width: 90%;
+                                width: 90%;
                             }
                             figcaption {
                                 p {
@@ -834,7 +902,7 @@ body {
                     .grid-container-4 {
                         display: grid;
                         align-content: space-evenly;
-                        grid-template-columns: auto;
+                        grid-template-columns: auto ;
 
                         figure {
                             img {
@@ -853,4 +921,5 @@ body {
             }
         }
     }
+
 }
