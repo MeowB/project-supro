@@ -1,0 +1,255 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("../font/Roboto/Roboto-Regular.ttf"); }
+
+* {
+  text-decoration: none;
+  list-style: none;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.4; }
+
+@media only screen and (min-width: 968px) {
+  html .border {
+    background-color: #3c3c3c;
+    color: white;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    height: 70px;
+    text-transform: capitalize;
+    line-height: 70px;
+    font-size: 1.5em;
+    position: relative; }
+  html main {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%; }
+    html main article section .grid-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;
+      gap: 5%;
+      grid-template-areas: "area distance "; }
+      html main article section .grid-container .button {
+        background-color: black;
+        color: white;
+        text-transform: uppercase;
+        width: 150px;
+        height: 55px;
+        margin-top: 3%; }
+      html main article section .grid-container .area fieldset h1 {
+        text-transform: uppercase; }
+      html main article section .grid-container .area fieldset .columns {
+        columns: 2; }
+      html main article section .grid-container .distance {
+        grid-area: distance; }
+        html main article section .grid-container .distance fieldset h1 {
+          text-transform: uppercase; }
+    html main article section {
+      margin-top: 2%; }
+      html main article section .grid-container-2 {
+        display: grid;
+        grid-template-columns: 0.6fr 1.4fr;
+        grid-template-rows: 1fr;
+        gap: 1%;
+        grid-template-areas: "leftlist map"; }
+        html main article section .grid-container-2 .leftList {
+          grid-area: leftlist;
+          height: 30em;
+          border: solid;
+          overflow: scroll; }
+          html main article section .grid-container-2 .leftList .box .columns2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+            gap: 1%;
+            grid-template-areas: "image presentation "; }
+            html main article section .grid-container-2 .leftList .box .columns2 .image {
+              grid-area: image; }
+              html main article section .grid-container-2 .leftList .box .columns2 .image img {
+                max-width: 100%; }
+            html main article section .grid-container-2 .leftList .box .columns2 .presentation {
+              grid-area: presentation; }
+              html main article section .grid-container-2 .leftList .box .columns2 .presentation h2 {
+                text-transform: capitalize; }
+              html main article section .grid-container-2 .leftList .box .columns2 .presentation .view-map {
+                background-color: black;
+                color: white;
+                text-transform: uppercase;
+                height: 50px;
+                width: 100px; }
+        html main article section .grid-container-2 .map {
+          grid-area: map; }
+          html main article section .grid-container-2 .map .ImgMap img {
+            max-width: 100%; }
+    html main .footer {
+      columns: 2; }
+      html main .footer .left ul li {
+        display: inline;
+        margin: 5px;
+        text-transform: uppercase; }
+      html main .footer .right ul li {
+        display: inline;
+        margin: 5px; } }
+
+@media only screen and (min-width: 768px) and (max-width: 968px) {
+  html .border {
+    background-color: #3c3c3c;
+    color: white;
+    width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    height: 70px;
+    text-transform: capitalize;
+    line-height: 70px;
+    font-size: 1.5em;
+    margin-bottom: 5%; }
+  html main {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto; }
+    html main article section .grid-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;
+      gap: 1%;
+      grid-template-areas: "area distance "; }
+      html main article section .grid-container .button {
+        background-color: black;
+        color: white;
+        text-transform: uppercase;
+        width: 150px;
+        height: 55px;
+        margin-top: 3%; }
+      html main article section .grid-container .area fieldset h1 {
+        text-transform: uppercase; }
+      html main article section .grid-container .area fieldset .columns {
+        columns: 2; }
+      html main article section .grid-container .distance fieldset h1 {
+        text-transform: uppercase; }
+    html main article section {
+      margin-top: 2%; }
+      html main article section .grid-container-2 {
+        display: grid;
+        grid-template-rows: 1fr;
+        gap: 1%;
+        grid-template-areas: "leftlist map"; }
+        html main article section .grid-container-2 .leftList {
+          grid-area: leftlist;
+          height: 30em;
+          border: solid;
+          overflow: scroll; }
+          html main article section .grid-container-2 .leftList .box .columns2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+            gap: 5%;
+            grid-template-areas: "image presentation "; }
+            html main article section .grid-container-2 .leftList .box .columns2 .image {
+              grid-area: image; }
+              html main article section .grid-container-2 .leftList .box .columns2 .image img {
+                max-width: 100%; }
+            html main article section .grid-container-2 .leftList .box .columns2 .presentation {
+              grid-area: presentation; }
+              html main article section .grid-container-2 .leftList .box .columns2 .presentation h2 {
+                text-transform: capitalize; }
+              html main article section .grid-container-2 .leftList .box .columns2 .presentation .view-map {
+                background-color: black;
+                color: white;
+                text-transform: uppercase;
+                height: 50px;
+                width: 100px; }
+        html main article section .grid-container-2 .map {
+          grid-area: map; }
+          html main article section .grid-container-2 .map .ImgMap img {
+            max-width: 100%; }
+    html main .footer {
+      columns: 2; }
+      html main .footer .left ul li {
+        display: inline;
+        margin: 5px;
+        text-transform: uppercase; }
+      html main .footer .right ul li {
+        display: inline;
+        margin: 5px; } }
+
+@media only screen and (max-device-width: 767px) {
+  html .border {
+    background-color: #3c3c3c;
+    color: white;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    height: 70px;
+    text-transform: capitalize;
+    line-height: 70px;
+    font-size: 1.5em;
+    margin-bottom: 5%; }
+  html main {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto; }
+    html main article section .grid-container .button {
+      background-color: black;
+      color: white;
+      text-transform: uppercase;
+      width: 110px;
+      height: 55px;
+      margin-top: 3%; }
+    html main article section .grid-container .area fieldset h1 {
+      text-transform: uppercase; }
+    html main article section .grid-container .distance {
+      margin-top: 2%; }
+      html main article section .grid-container .distance fieldset h1 {
+        text-transform: uppercase; }
+    html main article section {
+      margin-top: 2%; }
+      html main article section .grid-container-2 .leftList {
+        grid-area: leftlist;
+        height: 20em;
+        border: solid;
+        overflow: scroll; }
+        html main article section .grid-container-2 .leftList .box .columns2 {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: 1fr;
+          gap: 1%;
+          grid-template-areas: "image presentation "; }
+          html main article section .grid-container-2 .leftList .box .columns2 .image {
+            grid-area: image; }
+            html main article section .grid-container-2 .leftList .box .columns2 .image img {
+              max-width: 100%; }
+          html main article section .grid-container-2 .leftList .box .columns2 .presentation {
+            grid-area: presentation; }
+            html main article section .grid-container-2 .leftList .box .columns2 .presentation h2 {
+              text-transform: capitalize; }
+            html main article section .grid-container-2 .leftList .box .columns2 .presentation .view-map {
+              background-color: black;
+              color: white;
+              text-transform: uppercase;
+              height: 50px;
+              width: 100px; }
+      html main article section .grid-container-2 .map {
+        grid-area: map; }
+        html main article section .grid-container-2 .map .ImgMap {
+          margin-top: 2%; }
+          html main article section .grid-container-2 .map .ImgMap img {
+            max-width: 100%; }
+    html main .footer {
+      columns: 2; }
+      html main .footer .left ul li {
+        display: inline;
+        margin: 5px;
+        text-transform: uppercase; }
+      html main .footer .right ul li {
+        display: inline;
+        margin: 5px; } }

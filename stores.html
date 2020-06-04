@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1" />
+    <link rel="stylesheet" href="src/css/store.css">
+    <link rel="stylesheet" href="src/css/footer-header.css">
+    <title>Stores</title>
+</head>
+
+<body>
+    <header class="header">
+
+  
+
+        <a href="./index.html" class="header__logo"><img src="src/img/logo.png" alt=""></a>
+
+        <nav class="header__nav collapse navbar-collapse" id="">
+            <ul class="header__list navbar-nav mr-auto">
+              <li class="header__item nav-item"><a href="./index.html">Home</a></li>
+              <li class="header__item nav-item"><a href="./shop.html">Shop</a></li>
+              <li class="header__item nav-item"><a href="./pruduct.html">Product</a></li>
+              <li class="header__item nav-item"><a href="./pages.html">Pages</a></li>
+              <li class="header__item nav-item"><a href="./about.html">Blog</a></li>
+              <li class="header__item nav-item"><a href="./stores.html">Contact</a></li>
+            </ul>
+          </nav>
+
+        <input type="text" class="header__search" placeholder="Search here...">
+
+        <aside class="header__media">
+            <ul class="header__icons">
+                <li class="header__icon header__icon--search"><i class="fa fa-search fa-lg" aria-hidden="true"></i></li>
+                <li class="header__icon"><i class="fa fa-user fa-lg" aria-hidden="true"></i></li>
+                <li class="header__icon"><i class="fa fa-heart fa-lg" aria-hidden="true"></i></li>
+                <li class="header__icon"><i class="fa fa-shopping-cart fa-lg" aria-hidden="true"></i></li>
+                <li class="header__icon"><i class="fas fa-cog fa-lg" aria-hidden="true"></i></li>
+                <li class="header__icon header__icon--menuwrap">
+                    <input type="checkbox" class="header__icon header__icon--menuwrap--toggler">
+                    <div class="header__icon header__icon--menuwrap--hamburger">
+                        <div></div>
+                    </div>
+                    <div class="header__icon header__icon--menuwrap--menu">
+                        <div>
+                            <div>
+                                <ul>
+                                    <li><a href="./index.html">Home</a></li>
+                                    <li><a href="./shop.html">Shop</a></li>
+                                    <li><a href="./pruduct.html">Product</a></li>
+                                    <li><a href="./pages.html">Pages</a></li>
+                                    <li><a href="./about.html">Blog</a></li>
+                                    <li><a href="./stores.html">Contact</a></li>
+                                    <div class="info">
+                                        <h1>Contact Us</h1>
+                                        <p>69 Halsey St, Ny 10002, New York,<br>United States
+                                            support.center@unero.co<br>(0091)8547632521
+                                        </p>
+                                    </div>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </aside>
+    
+    </header>
+
+    <div class="border">
+            store locator
+        </div>
+    <main>
+
+        <article>
+
+            <section>
+
+                <div class="grid-container">
+                    <form class="area">
+                        <fieldset>
+                            <h1>search by area</h1>
+                            <div class="columns">
+                                <label for="Country">Country</label><br />
+                                <select name="Country" id="Country">
+                                    <option>--Please Select--</option>
+                                    <option value="belgium">Belgium</option>
+                                    <option value="france">France</option>
+                                    <option value="spain">Spain</option>
+                                    <option value="italy">Italy</option>
+                                    <option value="united-kingdom">United Kingdom</option>
+                                    <option value="canada">Canada</option>
+                                    <option value="united-states">United States</option>
+                                    <option value="china">China</option>
+                                    <option value="japan">Japan</option>
+                                </select><br />
+                                <label>City</label><br />
+                                <input type="text" name="city" /><br />
+                                <label>State</label><br />
+                                <input type="text" name="state" /><br />
+                                <label>Zipcode</label><br />
+                                <input type="number" name="Zipcode"><br />
+                            </div>
+
+                            <input type="submit" value="search" class="button" />
+
+                        </fieldset>
+                    </form>
+
+
+                    <form class="distance">
+                        <fieldset>
+                            <h1>search by distance</h1>
+                            <label>Location</label><br />
+                            <input type="text" name="location" /><br />
+                            <label>Radius</label><br />
+                            <input type="text" name="radius" /><br />
+                            <input type="submit" value="search" class="button" />
+
+                        </fieldset>
+                    </form>
+
+                </div>
+
+            </section>
+
+            <section>
+                <div class="grid-container-2">
+                    <div class="leftList">
+
+
+                        <div class="box">
+                            <div class="columns2">
+                                <div class="image">
+                                    <img src="src/stores/resources/2c558fd397fc98b43c893a15524037a1_1.jpeg" alt="panda">
+                                </div>
+
+                                <div class="presentation">
+                                    <h2>panda</h2>
+                                    <div class="adress">
+                                        991 Broadway,New York,
+                                        New York, Zip Code:
+                                        10006, AS
+                                    </div>
+                                    <div class="phone">
+                                        Phone 1-541-754-3010
+                                    </div>
+                                    <input class="view-map" type="submit" value="view map" />
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <div class="box">
+                            <div class="columns2">
+                                <div class="image">
+                                    <img class="img" src="src/stores/resources/64e3011babb9cb666c04621c00230857.jpg"
+                                        alt="curabitur">
+                                </div>
+                                <div class="presentation">
+                                    <h2>curabitur</h2>
+                                    <div class="adress">
+                                        69 Mott St,New York,
+                                        New York, Zip Code:
+                                        10006, AS
+                                    </div>
+                                    <div class="phone">
+                                        Phone 1-541-754-3010
+                                    </div>
+                                    <input class="view-map" type="submit" value="view map" />
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="box">
+                            <div class="columns2">
+                                <div class="image">
+                                    <img src="src/stores/resources/9423947432_175211195f_b.jpg" alt="Tandem-C">
+                                </div>
+                                <div class="presentation">
+                                    <h2>tandem-C</h2>
+                                    <div class="adress">
+                                        9i Broadway,New York,
+                                        New York, Zip Code:
+                                        10006, AS
+                                    </div>
+                                    <div class="phone">
+                                        Phone 1-541-754-3010
+                                    </div>
+                                    <input class="view-map" type="submit" value="view map" />
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                    <div class="map">
+                        <div class="ImgMap">
+                            <img src="src/stores/resources/kobu-agency-UD7pyCkdBg8-unsplash.jpg" alt="map">
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </section>
+            <section>
+                <div class="footer">
+
+                    <div class="columns3">
+                        <div class="left">
+                            <ul>
+                                <li>facebook</li>
+                                <li>twitter</li>
+                                <li>google</li>
+                                <li>youtube</li>
+                                <li>instagram</li>
+                            </ul>
+                        </div>
+
+                        <div class="right">
+                            <ul>
+                                <li>
+                                    <img src="src/stores/resources/payment1.png" alt="payment1">
+                                </li>
+                                <li>
+                                    <img src="src/stores/resources/payment2.png" alt="payment2">
+                                </li>
+                                <li>
+                                    <img src="src/stores/resources/payment3.png" alt="payment3">
+                                </li>
+                                <li>
+                                    <img src="src/stores/resources/payment4.png" alt="payment4">
+                                </li>
+                                <li>
+                                    <img src="src/stores/resources/payment5.png" alt="payment5">
+                                </li>
+
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </article>
+
+    </main>
+</body>
+    <footer class="footer">
+
+        <div class="up footer__listwrap">
+            <div class="footer__list footer__contact nonephone">
+                <ul>
+                    <img src="src/img/logo.png" alt="">
+                    <li>
+                        <p><i class="fas fa-map-marker-alt"></i> 184 Main Rd E, St Albans<br>VIC 3021, Australia</p>
+                    </li>
+                    <li>
+                        <p><i class="fas fa-envelope"></i> contact@company.com</p>
+                    </li>
+                    <li>
+                        <p><i class="fas fa-phone reverse"></i> +001 2233 456</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__list footer__list--help left">
+                <h3>HELP & INFORMATION</h3>
+                <ul>
+                    <li>Track order</li>
+                    <li>Premier delivery</li>
+                    <li>Student Discount</li>
+                </ul>
+            </div>
+
+            <div class="footer__list footer__list--about right">
+                <h3>ABOUT SUPRO</h3>
+                <ul>
+                    <li>About us</li>
+                    <li>Careers</li>
+                    <li>Corporate</li>
+                    <li>Investors</li>
+                </ul>
+            </div>
+
+            <div class="footer__list footer__list--shop left">
+                <h3>ONLINE SHOP</h3>
+                <ul>
+                    <li>Shoes</li>
+                    <li>Bags</li>
+                    <li>Belts</li>
+                </ul>
+            </div>
+
+            <div class="footer__list nonedesk right">
+                <h3>LANGUAGE</h3>
+
+                <select name="footer__list languages">
+                    <option value="english">English</option>
+                    <option value="french">French</option>
+                    <option value="german">German</option>
+                    <option value="vulcain">Vulcain</option>
+                </select>
+            </div>
+
+            <div class="footer__list nonedesk left">
+                <h3>CURRENCY</h3>
+
+                <select name="languages">
+                    <option value="united state dollar">USD</option>
+                    <option value="japanese yen">JPY</option>
+                    <option value="european euro">EUR</option>
+                    <option value="russian ruble">RUB</option>
+                    <option value="chinese yen">CNY</option>
+                </select>
+            </div>
+        </div>
+
+
+
+        <div class="footer__icon down">
+            <div>
+                <p> &copy;2018 <b>Supro.</b> All rights reserved<br><a class="nonedesk">Privacy Policy</a> <a
+                        class="nonedesk">Terme of Use</a></p>
+            </div>
+
+            <div class="nonephone" alt="socials">
+                <ul>
+                    <li></li>
+                    <li><a href="#"><i class="fab fa-facebook-f fa-lg"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter fa-lg"></i></a></li>
+                    <li><a href="#"><i class="fab fa-google-plus-g fa-lg"></i></a></li>
+                    <li><a href="#"><i class="fab fa-pinterest-p fa-lg"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram fa-lg"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="nonephone" alt="payements">
+                <ul>
+                    <li><i class="fab fa-cc-visa fa-lg"></i></li>
+                    <li><i class="fab fa-cc-paypal fa-lg"></i></li>
+                    <li><i class="fab fa-cc-mastercard fa-lg"></i></li>
+                    <li><i class="fab fa-cc-discover fa-lg"></i></li>
+                    <li><i class="fab fa-cc-amex fa-lg"></i></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
+
+
+</html>

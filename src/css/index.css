@@ -138,21 +138,12 @@ a {
 
 .header__icon {
   z-index: 12;
-  /*Hamburger Background*/
 }
 .header__icon--menuwrap {
   width: 24px;
   height: 24px;
   background: #fff;
   display: flex;
-  /* Hamburger Line */
-  /* Hamburger Lines - Top & Bottom */
-  /* Moves Line Down */
-  /* Toggler Animation */
-  /* Turns Lines Into X */
-  /* Rotate On Hover When Checked */
-  /* Show Menu */
-  /*  positionning  */
 }
 .header__icon--menuwrap--toggler {
   z-index: 10;
@@ -340,7 +331,7 @@ a {
   display: flex;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 968px) {
   .footer__list {
     padding: 0 4em;
   }
@@ -468,7 +459,7 @@ a {
 .main__banner__secondary--container--right h2, .main__banner__secondary--container--right p, .main__banner__secondary--container--right a {
   margin: 0;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 968px) {
   .main__banner__secondary > div {
     height: 300px;
   }
@@ -560,7 +551,7 @@ a {
   margin-bottom: 30px;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 968px) {
   .main__banner {
     width: 100%;
   }
@@ -675,7 +666,7 @@ a {
   height: auto;
   display: inline-block;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 968px) {
   .main .newArrival {
     padding: 0;
     width: 65%;
@@ -777,7 +768,7 @@ form button {
   border: none;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 968px) {
   #newsletter {
     clear: both;
   }
@@ -791,7 +782,7 @@ form button {
   clear: both;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 968px) {
   .news {
     margin: auto;
     width: 70%;
@@ -825,12 +816,12 @@ form button {
     width: 100%;
   }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 968px) {
   .main, .footer {
     padding: 0 7.5%;
   }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 968px) {
   .header {
     background: #fff;
   }
@@ -838,7 +829,7 @@ form button {
 .header__item:hover {
   transform: scale(1.04);
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 968px) {
   .header__icon--menuwrap {
     background-color: #F2EDE9;
     display: none;
@@ -847,7 +838,7 @@ form button {
 .header__icon--search {
   display: block;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 968px) {
   .header__icon--search {
     display: none;
   }
@@ -858,7 +849,7 @@ form button {
   transform: rotateZ(90deg);
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 968px) {
   #bannerb {
     display: none;
   }
