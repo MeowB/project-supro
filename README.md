@@ -6,9 +6,9 @@ Made with love by :
 - [Mehdi Semlali](https://github.com/mehdoche1988)   
 - [Arthur Pluymers](https://github.com/Buchos)   
 
-This was an exercice for BeCode, the goal was to use what we learned about HTML/CSS/SASS to design 5 pages of a webshop with a picture of the given goal to achieve.
-The pages had to be responsive for desktop, tablet and mobile.
-This was made in our 3rd week at becode in late may/early june
+This was an exercice for BeCode, the goal was to use what we learned about HTML/CSS/SASS to design 5 pages of a webshop with a picture of the given goal to achieve.   
+The pages had to be responsive for desktop, tablet and mobile.   
+This was made in our 3rd week at becode in late may/early june.   
 
 
 ## bugs:
