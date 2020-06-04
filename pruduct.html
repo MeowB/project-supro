@@ -2,235 +2,382 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="initial-scale=1" />
-    <link rel="stylesheet" href="src/css/style.css">
-    <title>Single product</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="initial-scale=1" />
+  <link rel="stylesheet" href="src/css/style.css">
+  <link rel="stylesheet" href="src/css/footer-header.css">
+
+  <title>Single product</title>
 </head>
 
 <body>
-    <header>
+  <header class="header">
+    <a href="#" class="header__logo"><img src="src/img/logo.png" alt=""></a>
 
-    </header>
+    <nav class="header__nav collapse navbar-collapse" id="">
+      <ul class="header__list navbar-nav mr-auto">
+        <li class="header__item nav-item"><a href="#">Home</a></li>
+        <li class="header__item nav-item"><a href="./shop.html">Shop</a></li>
+        <li class="header__item nav-item"><a href="./pruduct.html">Product</a></li>
+        <li class="header__item nav-item"><a href="#">Pages</a></li>
+        <li class="header__item nav-item"><a href="#">Blog</a></li>
+        <li class="header__item nav-item"><a href="#">Contact</a></li>
+      </ul>
+    </nav>
 
-    <main>
+    <input type="text" class="header__search" placeholder="Search here...">
 
-        <article>
+    <aside class="header__media">
+      <ul class="header__icons">
+        <li class="header__icon header__icon--search"><i class="fa fa-search fa-lg" aria-hidden="true"></i></li>
+        <li class="header__icon"><i class="fa fa-user fa-lg" aria-hidden="true"></i></li>
+        <li class="header__icon"><i class="fa fa-heart fa-lg" aria-hidden="true"></i></li>
+        <li class="header__icon"><i class="fa fa-shopping-cart fa-lg" aria-hidden="true"></i></li>
+        <li class="header__icon"><i class="fas fa-cog fa-lg" aria-hidden="true"></i></li>
+        <li class="header__icon header__icon--menuwrap">
+          <input type="checkbox" class="header__icon header__icon--menuwrap--toggler">
+          <div class="header__icon header__icon--menuwrap--hamburger">
+            <div></div>
+          </div>
+          <div class="header__icon header__icon--menuwrap--menu">
+            <div>
+              <div>
+                <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="./shop.html">Shop</a></li>
+                  <li><a href="./pruduct.html">Product</a></li>
+                  <li><a href="#">Pages</a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Contact</a></li>
+                  <div class="info">
+                    <h1>Contact Us</h1>
+                    <p>69 Halsey St, Ny 10002, New York,<br>United States support.center@unero.co<br>(0091)8547632521
+                    </p>
+                  </div>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
 
-            <section>
-                <div class="home"><span>home</span> . glitter decorate shoes adasdi</div>
+    </aside>
+  </header>
 
-                <div class="grid-container">
-                    <div class="image">
-                        <div class="imageG">
-                            <img src="src/product/resources/prd_05_10.jpg" alt="Mango Women's Bag 1G">
+  <main>
 
-                        </div>
+    <article>
 
-                        <div class="imageS">
-                            <img src="src/product/resources/prd_05_1.jpg" alt="Mango Women's Bag 1P">
-                            <img src="src/product/resources/prd_05_2.jpg" alt="Mango Women's Bag 2P">
-                            <img src="src/product/resources/prd_05_3.jpg" alt="Mango Women's Bag 3P">
-                            <img src="src/product/resources/prd_05_4.jpg" alt="Mango Women's Bag 4P">
-                        </div>
-                    </div>
-                    <div class="review">
+      <section>
+        <div class="home"><span>home</span> . glitter decorate shoes adasdi</div>
 
-                        <p>
-                            <!--&#x1F31F; &#x1F31F; &#x1F31F; &#x1F31F;	&#x2729;-->
-                            <img src="src/product/resources/Fstar.png" alt="full star">
-                            <img src="src/product/resources/Fstar.png" alt="full star">
-                            <img src="src/product/resources/Fstar.png" alt="full star">
-                            <img src="src/product/resources/Fstar.png" alt="full star">
-                            <img src="src/product/resources/Estar.png" alt="empty star">
-                            1 Review
-                        </p>
-                        <h2>mango women's bag</h2>
-                        <p>SKU:AB1609456789</p>
-                        <p>£95.90 <span>£119.90</span></p>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                            Ex sequi non nihil voluptatibus officiis animi soluta
-                        </p>
+        <div class="grid-container">
+          <div class="image">
+            <div class="imageG">
+              <img src="src/product/resources/prd_05_10.jpg" alt="Mango Women's Bag 1G">
 
-                        <div class="color">
-                            <p>color</p>
+            </div>
 
-                            <ul>
-                                <li class="color1">
+            <div class="imageS">
+              <img src="src/product/resources/prd_05_1.jpg" alt="Mango Women's Bag 1P">
+              <img src="src/product/resources/prd_05_2.jpg" alt="Mango Women's Bag 2P">
+              <img src="src/product/resources/prd_05_3.jpg" alt="Mango Women's Bag 3P">
+              <img src="src/product/resources/prd_05_4.jpg" alt="Mango Women's Bag 4P">
+            </div>
+          </div>
+          <div class="review">
 
-                                </li>
-                                <li class="color2">
+            <p>
+              <!--&#x1F31F; &#x1F31F; &#x1F31F; &#x1F31F;	&#x2729;-->
+              <img src="src/product/resources/Fstar.png" alt="full star">
+              <img src="src/product/resources/Fstar.png" alt="full star">
+              <img src="src/product/resources/Fstar.png" alt="full star">
+              <img src="src/product/resources/Fstar.png" alt="full star">
+              <img src="src/product/resources/Estar.png" alt="empty star">
+              1 Review
+            </p>
+            <h2>mango women's bag</h2>
+            <p>SKU:AB1609456789</p>
+            <p>£95.90 <span>£119.90</span></p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Ex sequi non nihil voluptatibus officiis animi soluta
+            </p>
 
-                                </li>
-                                <li class="color3">
+            <div class="color">
+              <p>color</p>
 
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="size">
+              <ul>
+                <li class="color1">
 
-                            <p>size</p>
-                            <!--liste-->
-                            <ul>
-                                <li class="small">s</li>
-                                <li class="medium">m</li>
-                                <li class="large">l</li>
-                            </ul>
+                </li>
+                <li class="color2">
 
-                        </div>
-                        <div class="buying">
-                            <div class="cart">
-                                <input class="number" type="number" step="1" value="1" min="0">
-                                <button class="add">add to cart</button>
-                                <button><i class="far fa-heart"></i></button>
-                            </div>
-                            <div class="buy">
-                                <button>buy now</button>
-                            </div>
-                            <div class="category">
-                                <p> <b>category :</b><span> bags, fashion </span></p>
-                            </div>
-                            <div class="tags">
-                                <p><b>tags:</b><span> clothing, fashion </span></p>
-                            </div>
+                </li>
+                <li class="color3">
 
-                        </div>
+                </li>
+              </ul>
+            </div>
+            <div class="size">
 
-                        <div class="media-icons">
+              <p>size</p>
+              <!--liste-->
+              <ul>
+                <li class="small">s</li>
+                <li class="medium">m</li>
+                <li class="large">l</li>
+              </ul>
 
-                            <ul>
-                                <li class="facebook">
-                                    <i class="fab fa-facebook-f"></i>
-                                </li>
-                                <li class="twitter">
-                                    <i class="fab fa-twitter"></i>
-                                </li>
-                                <li class="pinterest">
-                                    <i class="fab fa-pinterest"></i>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-            </section>
+            </div>
+            <div class="buying">
+              <div class="cart">
+                <input class="number" type="number" step="1" value="1" min="0">
+                <button class="add">add to cart</button>
+                <button><i class="far fa-heart"></i></button>
+              </div>
+              <div class="buy">
+                <button>buy now</button>
+              </div>
+              <div class="category">
+                <p> <b>category :</b><span> bags, fashion </span></p>
+              </div>
+              <div class="tags">
+                <p><b>tags:</b><span> clothing, fashion </span></p>
+              </div>
 
-            <section>
-                <div class="description">
-                    <ul>
-                        <li class="desc">description</li>
-                        <li class="more">more information</li>
-                        <li class="revi">review</li>
-                    </ul>
-                </div>
-            </section>
+            </div>
 
-            <section>
-                <div class="grid-container-2">
-                    <div class="presentation">
-                        <h2>introduction</h2>
-                        <div class="text">
-                            <p>
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                Iste recusandae similique earum, sunt ab eius assumenda unde at,
-                                necessitatibus corrupti nisi fuga
-                                tempora velit voluptas quo tempore itaque asperiores totam?
-                            </p>
-                        </div>
-                        <div class="features">
-                            <h2>features</h2>
-                            <ul>
-                                <li>Velvet fabric</li>
-                                <li>Laces</li>
-                                <li>Versatile garment ideal for yoga, pilates or for a casual look for relaxing in</li>
-                                <li>2.5 cm platform heel</li>
-                            </ul>
-                        </div>
-                    </div>
+            <div class="media-icons">
 
-                    <div class="image">
-                        <img src="src/product/resources/prd_description.jpg" alt="RedShoes">
-                    </div>
-                </div>
-            </section>
+              <ul>
+                <li class="facebook">
+                  <i class="fab fa-facebook-f"></i>
+                </li>
+                <li class="twitter">
+                  <i class="fab fa-twitter"></i>
+                </li>
+                <li class="pinterest">
+                  <i class="fab fa-pinterest"></i>
+                </li>
+              </ul>
+            </div>
+          </div>
+      </section>
 
-            <section>
-                <h2>related products</h2>
-                <h3>check items to add to the cart or select all</h3>
+      <section>
+        <div class="description">
+          <ul>
+            <li class="desc">description</li>
+            <li class="more">more information</li>
+            <li class="revi">review</li>
+          </ul>
+        </div>
+      </section>
 
-                <div class="grid-container-3">
-                    <figure>
-                        <img src="src/product/resources/prd_15_1.jpg" alt="prd_15">
-                        <figcaption>
-                            <p>contton sweater</p>
-                            <p><span>$58.50</span> $55.00</p>
-                        </figcaption>
-                    </figure>
-                    <figure>
-                        <img src="src/product/resources/prd_16_1.jpg" alt="prd_16">
-                        <figcaption>
-                            <p>glitter decorated shoes</p>
-                            <p>$40.00</p>
-                        </figcaption>
-                    </figure>
-                    <figure>
-                        <img src="src/product/resources/prd_17_1_1.jpg" alt="prd_17">
-                        <figcaption>
-                            <p>Embroidered flowy jacket</p>
-                            <p><span>$37.00</span> $35.00</p>
-                        </figcaption>
-                    </figure>
-                    <figure>
-                        <img src="src/product/resources/prd_13_1_1.jpg" alt="prd_13">
-                        <figcaption>
-                            <p>floral short jumpsuit</p>
-                            <p>$30.00</p>
-                        </figcaption>
-                    </figure>
-                </div>
-            </section>
+      <section>
+        <div class="grid-container-2">
+          <div class="presentation">
+            <h2>introduction</h2>
+            <div class="text">
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Iste recusandae similique earum, sunt ab eius assumenda unde at,
+                necessitatibus corrupti nisi fuga
+                tempora velit voluptas quo tempore itaque asperiores totam?
+              </p>
+            </div>
+            <div class="features">
+              <h2>features</h2>
+              <ul>
+                <li>Velvet fabric</li>
+                <li>Laces</li>
+                <li>Versatile garment ideal for yoga, pilates or for a casual look for relaxing in</li>
+                <li>2.5 cm platform heel</li>
+              </ul>
+            </div>
+          </div>
 
-            <section>
-                <h2>upsell products</h2>
+          <div class="image">
+            <img src="src/product/resources/prd_description.jpg" alt="RedShoes">
+          </div>
+        </div>
+      </section>
 
-                <div class="grid-container-4">
-                    <figure>
-                        <img src="src/product/resources/prd_09_1_1_4.jpg" alt="prd_09">
-                        <figcaption>
-                            <p>oversize flecked sweater</p>
-                            <p><span>$68.00</span> $52.00</p>
-                        </figcaption>
-                    </figure>
-                    <figure>
-                        <img src="src/product/resources/prd_07_1_1.jpg" alt="prd_07">
-                        <figcaption>
-                            <p>metallic frame glasses</p>
-                            <p>$66.00</p>
-                        </figcaption>
-                    </figure>
-                    <figure>
-                        <img src="src/product/resources/prd_06_1_1.jpg" alt="prd_06">
-                        <figcaption>
-                            <p>suede mixed sneakers</p>
-                            <p>$45.00</p>
-                        </figcaption>
-                    </figure>
-                    <figure>
-                        <img src="src/product/resources/prd_07_1_3.jpg" alt="prd_07">
-                        <figcaption>
-                            <p>striped cotton sweaters</p>
-                            <p>$67.00</p>
-                        </figcaption>
-                    </figure>
-                </div>
+      <section>
+        <h2>related products</h2>
+        <h3>check items to add to the cart or select all</h3>
 
-            </section>
+        <div class="grid-container-3">
+          <figure>
+            <img src="src/product/resources/prd_15_1.jpg" alt="prd_15">
+            <figcaption>
+              <p>contton sweater</p>
+              <p><span>$58.50</span> $55.00</p>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="src/product/resources/prd_16_1.jpg" alt="prd_16">
+            <figcaption>
+              <p>glitter decorated shoes</p>
+              <p>$40.00</p>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="src/product/resources/prd_17_1_1.jpg" alt="prd_17">
+            <figcaption>
+              <p>Embroidered flowy jacket</p>
+              <p><span>$37.00</span> $35.00</p>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="src/product/resources/prd_13_1_1.jpg" alt="prd_13">
+            <figcaption>
+              <p>floral short jumpsuit</p>
+              <p>$30.00</p>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
 
-        </article>
+      <section>
+        <h2>upsell products</h2>
 
-    </main>
+        <div class="grid-container-4">
+          <figure>
+            <img src="src/product/resources/prd_09_1_1_4.jpg" alt="prd_09">
+            <figcaption>
+              <p>oversize flecked sweater</p>
+              <p><span>$68.00</span> $52.00</p>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="src/product/resources/prd_07_1_1.jpg" alt="prd_07">
+            <figcaption>
+              <p>metallic frame glasses</p>
+              <p>$66.00</p>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="src/product/resources/prd_06_1_1.jpg" alt="prd_06">
+            <figcaption>
+              <p>suede mixed sneakers</p>
+              <p>$45.00</p>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="src/product/resources/prd_07_1_3.jpg" alt="prd_07">
+            <figcaption>
+              <p>striped cotton sweaters</p>
+              <p>$67.00</p>
+            </figcaption>
+          </figure>
+        </div>
 
-    <footer>
+      </section>
 
-    </footer>
+    </article>
+
+  </main>
+
+  <footer class="footer">
+    <div class="up footer__listwrap">
+      <div class="footer__list footer__contact nonephone">
+        <ul>
+          <img src="src/img/logo.png" alt="">
+          <li>
+            <p><i class="fas fa-map-marker-alt"></i> 184 Main Rd E, St Albans<br>VIC 3021, Australia</p>
+          </li>
+          <li>
+            <p><i class="fas fa-envelope"></i> contact@company.com</p>
+          </li>
+          <li>
+            <p><i class="fas fa-phone reverse"></i> +001 2233 456</p>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer__list footer__list--help left">
+        <h3>HELP & INFORMATION</h3>
+        <ul>
+          <li>Track order</li>
+          <li>Premier delivery</li>
+          <li>Student Discount</li>
+        </ul>
+      </div>
+
+      <div class="footer__list footer__list--about right">
+        <h3>ABOUT SUPRO</h3>
+        <ul>
+          <li>About us</li>
+          <li>Careers</li>
+          <li>Corporate</li>
+          <li>Investors</li>
+        </ul>
+      </div>
+
+      <div class="footer__list footer__list--shop left">
+        <h3>ONLINE SHOP</h3>
+        <ul>
+          <li>Shoes</li>
+          <li>Bags</li>
+          <li>Belts</li>
+        </ul>
+      </div>
+
+      <div class="footer__list nonedesk right">
+        <h3>LANGUAGE</h3>
+
+        <select name="footer__list languages">
+          <option value="english">English</option>
+          <option value="french">French</option>
+          <option value="german">German</option>
+          <option value="vulcain">Vulcain</option>
+        </select>
+      </div>
+
+      <div class="footer__list nonedesk left">
+        <h3>CURRENCY</h3>
+
+        <select name="languages">
+          <option value="united state dollar">USD</option>
+          <option value="japanese yen">JPY</option>
+          <option value="european euro">EUR</option>
+          <option value="russian ruble">RUB</option>
+          <option value="chinese yen">CNY</option>
+        </select>
+      </div>
+    </div>
+
+
+
+    <div class="footer__icon down">
+      <div>
+        <p> &copy;2018 <b>Supro.</b> All rights reserved<br><a class="nonedesk">Privacy Policy</a> <a
+            class="nonedesk">Terme of Use</a></p>
+      </div>
+
+      <div class="nonephone" alt="socials">
+        <ul>
+          <li></li>
+          <li><a href="#"><i class="fab fa-facebook-f fa-lg"></i></a></li>
+          <li><a href="#"><i class="fab fa-twitter fa-lg"></i></a></li>
+          <li><a href="#"><i class="fab fa-google-plus-g fa-lg"></i></a></li>
+          <li><a href="#"><i class="fab fa-pinterest-p fa-lg"></i></a></li>
+          <li><a href="#"><i class="fab fa-instagram fa-lg"></i></a></li>
+        </ul>
+      </div>
+
+      <div class="nonephone" alt="payements">
+        <ul>
+          <li><i class="fab fa-cc-visa fa-lg"></i></li>
+          <li><i class="fab fa-cc-paypal fa-lg"></i></li>
+          <li><i class="fab fa-cc-mastercard fa-lg"></i></li>
+          <li><i class="fab fa-cc-discover fa-lg"></i></li>
+          <li><i class="fab fa-cc-amex fa-lg"></i></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
 </body>
 <script defer src="https:use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
 
