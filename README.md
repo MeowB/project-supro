@@ -1,5 +1,5 @@
 # project-supro
-
+THE PAGE IS NOW ONLINE [HERE](https://meowb.github.io/project-supro/index.html)
 ## bugs:
 * ~~hamburger hitbox~~
 Solution: adding  "pointer-events: none;" on everything getting above the toggler checkbox ( class: "header__icon--menuwrap--hamburger")
