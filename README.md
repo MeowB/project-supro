@@ -1,14 +1,13 @@
 # project-supro
 THE PAGE IS NOW ONLINE [HERE](https://meowb.github.io/project-supro/index.html)
 
-Made with love by :
+Made by :
 - [Scott Borlon](https://github.com/MeowB)   
 - [Mehdi Semlali](https://github.com/mehdoche1988)   
 - [Arthur Pluymers](https://github.com/Buchos)   
 
-This was an exercice for BeCode, the goal was to use what we learned about HTML/CSS/SASS to design 5 pages of a webshop with a picture of the given goal to achieve.   
-The pages had to be responsive for desktop, tablet and mobile.   
-This was made in our 3rd week at becode in late may/early june.   
+The goal of the exercise was to use what we learned about HTML/CSS/SASS to re-create a website out of a design.
+The pages had to be responsive for desktop, tablet and mobile.
 
 
 ## bugs:
